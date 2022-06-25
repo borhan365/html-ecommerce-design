@@ -2051,7 +2051,7 @@ a.submit-btn.btn-outline-primary {
 	justify-content: center;
 	align-items: center;
 	gap: 3px;
-	box-shadow: 0px 0px 10px 0px #1c1c2340;
+	box-shadow: 0px -1px 3px 0px #1c1c2314;
 }
 .footerMenuItems {
   width: 100%;
@@ -2065,11 +2065,11 @@ a.submit-btn.btn-outline-primary {
 }
 .footerMenuItems i {
   font-size: 22px;
-  color: black;
+  color: #1c1c23;
 }
 .footerMenuItems span {
   font-size: 11px;
-  color: black;
+  color: #1c1c23;
 }
 .hover-mega-menu {
   font-size: 15px;
@@ -3462,3 +3462,41 @@ footer {
 .footer-left p {
   width: max-content;
 }
+
+/* mobile header */
+.mobile-header-logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mobile-header-menu-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 10px;
+	background: white !important;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	box-shadow: 0px 0px 8px 0px lightgray;
+}
+  .bargerMenu i{
+      font-size: 26px;
+  }
+  .mobile-header-logo img{
+      width: 110px;
+  }
+  .right-mobile-menu {
+
+  }
+  .right-mobile-menu i{
+      font-size: 26px;
+  }
+  .mobile-hide {
+    display: none;
+  }

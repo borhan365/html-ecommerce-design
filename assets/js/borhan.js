@@ -41,7 +41,7 @@ var swiper = new Swiper(".featuredProduct", {
     320: {
       slidesPerView: 2,
       spaceBetween: 5,
-      autoplay: false,
+      navigation: false,
     },
     // when window width is >= 480px
     480: {
