@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecommerce Home Page</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/shopping-bag.svg">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/woomart.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!-- Mobile Menu section -->
+<section>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="mobile-header-menu-section">
+                <!-- Left Barger menu icon -->
+                <div class="bargerMenu" onclick="OpenMobileMenu()">
+                    <i class="fa fa-bars"></i>  
+                </div>
+
+                <!-- Middle logo -->
+                <div class="mobile-header-logo">
+                    <a href="#"><img src="assets/images/logo.svg" class="img-fluid" alt=""></a>
+                </div>
+
+                <!-- Right Menus -->
+                <div class="right-mobile-menu" onclick="MobileCartSidebarToggle()">
+                    <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Menu section -->
+
+<!-- Left fixed sidebar -->
+<section>
+    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+        <div class="sidebar-logo-close-icon">
+            <div class="sidebar-logo-header">
+                <img src="assets/images/logo.svg" alt="">
+            </div>
+            <div class="cross-icon" id="CloseSidebar">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+
+        <!-- Profile picture and content area -->
+        <div class="sidebar-profile-box">
+            <div class="profile-pic">
+                <a href="profile.html"><img src="assets/images/others/happy-girl.jpg" alt=""></a>
+            </div>
+            <div class="sidebar-profile-content">
+                <h2>Md Borhan Uddin</h2>
+                <p>01851590081</p>
+                <p><a href="profile.html">Manage Accounts</a></p>
+            </div>
+        </div>
+
+        <!-- Menus -->
+        <div class="sidebar-middle-menus">
+            <ul>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">Mobile <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Men <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Women <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Kids <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Toys <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Electronics Devices <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Sports<span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Necklace <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Earrings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Rings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Anklet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Locket Pen dust <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Fair Sticks <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bracelet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bras less <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Nose Pin <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry Box <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Stone Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+            </ul>
+        </div>
+
+        <div class="left-sidebar-footer">
+            <a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> |<a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a>
+        </div>
+
+    </div>
+</section>
+<!-- Left fixed sidebar -->
+
+<!-- Right cart sidebar fixed -->
+<section>
+    <div class="main-cart-fixed-sidebar" id="CartSidebar">
+        
+        <!-- My cart and Cross icon -->
+        <div class="cartTopHeader">
+            <i class="fa fa-times" onclick="CartSidebarToggle()"></i>
+            <h5>My Cart</h5>
+        </div>
+
+        <!-- All Products list -->
+        <div class="main-all-product-in-cart">
+
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/fruits/banner1.png" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/fruits/banner2.png" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/fruits/banner5.png" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <div class="inCart-footer">
+
+            <!-- Subtotal -->
+            <div class="inCart-subtotal FLEX">
+                <p>Sub Total : </p>
+                <p> ৳ 530</p>
+            </div>
+
+            <!-- Shipping express -->
+            <div class="inCart-shippingAddress FLEX">
+                <p>Shipping (Express) : </p>
+                <p> ৳ 50</p>
+            </div>
+
+            <!-- total  -->
+            <div class="inCart-total FLEX">
+                <p><b>Total Shopping :</b></p>
+                <p><b> ৳ 630</b></p>
+            </div>
+
+            <a href="cart.html"><button class="btn btn-success w-100 my-2 checkoutBtn">Process to checkout</button></a>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- Right cart sidebar fixed -->
+
+
+<!-- Mobile Footer Fixed menu -->
+<section class="mobileFooter-fixed-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-mobile-footer-menu">
+                    <div class="footerMenuItems footerHome">
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>  <span>Home</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerChat">
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>  <span>Chat</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerCart">
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerAccount">
+                        <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>  <span>Account</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Footer Fixed menu -->
+
+<!-- Top Header -->
+<section class="topHeader-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="top-left-section">
+                    <p>Hotline: +88 0180000000000</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="top-right-side">
+
+                    <!-- My Account -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Account 
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Language -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language 
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Main category -->
+                    <!-- <div class="threeMenu">
+                        <li><a class="importer" href="registation.html">Importer &nbsp;</a></li>
+                        <li><a class="marchent" href="registation.html">&nbsp; Vendor &nbsp;</a></li>
+                        <li><a class="vendor" href="registation.html">&nbsp; marchent</a></li>
+                    </div> -->
+
+                    <!-- Currency -->
+                    <div class="dropdown show currency-box">
+                        <a class="btn dropdown-toggle currencyBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/others/bd.svg" alt="" style="width: 20px;"> BDT
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> BDT
+                            </a>
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> USD
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Top Header -->
+
+
+<header class="header-area">
+
+    <!-- Header middle -->
+    <div class="header-middle">
+        <div class="container">
+             <div class="row align-items-center">
+                <div class="col-md-2">
+                   <div class="logo-area wow animate__animated animate__fadeInDown">
+                       <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+                   </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="search-form">
+                        <form action="#" method="POST">
+                           <select name="" id="search-category">
+                               <option value="Products">Products</option>
+                               <option value="Products">Products</option>
+                               <option value="Suppliers">Suppliers</option>
+                           </select>
+                           <input type="text" placeholder="What Are You Looking For..." name="search">
+                           <a href="" class="search-btn"><i class="fa fa-search"></i> Search</a>
+                        </form>
+                    </div>
+                </div>
+                <!-- Card -->
+            <div class="col-md-3 text-right d-flex align-items-center justify-content-end">
+                <div class="login-ragistration">
+                    <a href="registation.html"><i class="fa fa-user w-auto d-inline bg-success text-white p-2 rounded mr-1"></i></a>
+                    <a href="login.html"><i class="fa fa-sign-in w-auto d-inline bg-info text-white p-2 rounded mr-1" aria-hidden="true"></i></a>
+                </div>
+                <div class="middle-cart">
+                    <button type="button" class="btn btn-success BrandColorbutton" onclick="CartSidebarToggle()">
+                        <i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span>
+                      </button>
+                      <span><a href="profile.html"><img src="assets/images/others/happy-girl.jpg" class="rounded-circle w-25" alt=""></a></span>
+                </div>
+            </div>
+             </div>
+        </div>
+    </div>
+
+
+    <!--header bottom-->
+    <div class="header-bottom" id="MainMenu">
+        <div class="container">
+            <nav class="headerNavbar">
+
+
+                <div id="navbarSupportedContent">
+                  <ul>
+                    <li class="nav-item active">
+                      <div class="burger-menu-thumb" id="burgerBar">
+                          <img src="assets/images/icons/menu-white.svg" alt="">
+                      </div>
+                    </li>
+                    <li class="hover-mega-menu Electronics"> <a href="#">Electronics <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                    
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </li>
+                    <li class="hover-mega-menu"><a href="#">Home Apperal <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                        
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </li>
+                    <li><a href="category.html">Man Fashions</a></li>
+                    <li><a href="category.html">Women Fashions</a></li>
+                    <li><a href="category.html">Jewelry</a></li>
+                    <li><a href="category.html">Baby products</a></li>
+                    <li><a href="category.html">Electronics</a></li>
+                  </ul>
+                  <li>
+                      <div class="button_container">
+                        <a href="all-shop.html"><button class="btn"><span>Shop List</span></button></a>
+                    </div>
+                    </li>
+                </div>
+              </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Main Order page  -->
+<section class="payment-section">
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="payment-left-sidebar">
+                    <h2>Choose Your Payment Method</h2>
+                    <div class="payment-main-wrapper mt-3">
+
+                        <div class="payment-box">
+                            <div class="payment-checkbox">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  </div>
+                            </div>
+                            <div class="payment-contnet">
+                                <h4>VISA/Master Card</h4>
+                                <p>Pay from your VISA or master card.</p>
+                            </div>
+                            <div class="payment-image">
+                                <img src="assets/images/payment-method/visa-master.png" alt="">
+                            </div>
+                        </div>
+                        <div class="payment-box">
+                            <div class="payment-checkbox">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  </div>
+                            </div>
+                            <div class="payment-contnet">
+                                <h4>Bkash</h4>
+                                <p>Pay from your Bkash Account using Bkash Payment Gateway</p>
+                            </div>
+                            <div class="payment-image">
+                                <img src="assets/images/payment-method/bkash (1).jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="payment-box">
+                            <div class="payment-checkbox">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  </div>
+                            </div>
+                            <div class="payment-contnet">
+                                <h4>Nagad</h4>
+                                <p>Get 10% discount with Nagad (BDT 2000 max per order)</p>
+                            </div>
+                            <div class="payment-image">
+                                <img src="assets/images/payment-method/nagad.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="payment-box">
+                            <div class="payment-checkbox">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  </div>
+                            </div>
+                            <div class="payment-contnet">
+                                <h4>SSLCOMMERZ</h4>
+                                <p>Pay from your amex/others card using SSL Payment Gateway.</p>
+                            </div>
+                            <div class="payment-image">
+                                <img src="assets/images/payment-method/ssl.png" alt="">
+                            </div>
+                        </div>
+
+                        <button class="FreshBtn mobileHide">Confirm Payment $20,000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right sidebar -->
+            <div class="col-md-4">
+                <div class="cart-right-order-summery py-5">
+                    <h2>Order Summary</h2>
+
+                    <!-- Subtotal row -->
+                    <div class="cart-subtotal d-flex justify-content-between py-2">
+                        <span>Subtotal (2 items)</span>
+                        <span>৳ 74,997</span>
+                    </div>
+
+                    <!-- Shipping fee -->
+                    <div class="cart-shipping d-flex justify-content-between py-2">
+                        <span>Shipping fee</span>
+                        <span>$299</span>
+                    </div>
+
+                    <!-- Total Price -->
+                    <div class="cart-total-price d-flex justify-content-between py-2 mt-4">
+                        <span><b>Total Price</b></span>
+                        <span>$299</span>
+                    </div>
+
+                    <!-- Button -->
+                    <a href="thankyou.html"><button  class="FreshBtn">Confirm Payment</button></a>
+
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- Main Order page  -->
+
+
+
+
+
+
+
+
+<!-- footer area-->
+<footer class="footer-area">
+
+    <div class="ClickTop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- start of footer middle-->
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget">
+                        <h4 class="widget-title">Location</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <label>Phone:</label>
+                                <a href="#">Toll Free (123) 456-7890</a>
+                            </li>
+                            <li>
+                                <label>Email:</label>
+                                <a href="#">mail@gmail.com</a>
+                            </li>
+                            <li>
+                                <label>Address:</label>
+                                <a href="#">Hatirpul</a>
+                            </li>
+                            <li>
+                                <label>WORKING DAYS/HOURS:</label>
+                            </li>
+                            <li>
+                                <a href="#">Mon - Sun / 9:00 AM - 8:00 PM</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">My Account</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget-instagram">
+                        <h4 class="widget-title">About NavieaSoft</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bordr-bottom"></div>
+            <div class="footer-content d-flex">
+                <div class="footer-left">
+                    <p>
+                        Navieasoft eCommerce © 2020. All Rights Reserved
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area -->
+
+
+
+    <!-- jquery js -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap popper js -->
+    <script src="assets/js/popper.js"></script>
+    <!-- theme bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- main js-->
+    <script src="assets/js/borhan.js"></script>
+</body>
+
+</html>

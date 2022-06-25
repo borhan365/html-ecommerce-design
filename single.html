@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecommerce Home Page</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/shopping-bag.svg">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/woomart.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!-- Mobile Menu section -->
+<section>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="mobile-header-menu-section">
+                <!-- Left Barger menu icon -->
+                <div class="bargerMenu" onclick="OpenMobileMenu()">
+                    <i class="fa fa-bars"></i>  
+                </div>
+
+                <!-- Middle logo -->
+                <div class="mobile-header-logo">
+                    <a href="#"><img src="assets/images/logo.svg" class="img-fluid" alt=""></a>
+                </div>
+
+                <!-- Right Menus -->
+                <div class="right-mobile-menu" onclick="MobileCartSidebarToggle()">
+                    <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Menu section -->
+
+<!-- Left fixed sidebar -->
+<section>
+    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+        <div class="sidebar-logo-close-icon">
+            <div class="sidebar-logo-header">
+                <img src="assets/images/logo.svg" alt="">
+            </div>
+            <div class="cross-icon" id="CloseSidebar">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+
+        <!-- Profile picture and content area -->
+        <div class="sidebar-profile-box">
+            <div class="profile-pic">
+                <a href="profile.html"><img src="assets/images/others/happy-girl.jpg" alt=""></a>
+            </div>
+            <div class="sidebar-profile-content">
+                <h2>Md Borhan Uddin</h2>
+                <p>01851590081</p>
+                <p><a href="profile.html">Manage Accounts</a></p>
+            </div>
+        </div>
+
+        <!-- Menus -->
+        <div class="sidebar-middle-menus">
+            <ul>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">Mobile <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Men <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Women <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Kids <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Toys <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Electronics Devices <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Sports<span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Necklace <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Earrings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Rings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Anklet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Locket Pen dust <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Fair Sticks <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bracelet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bras less <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Nose Pin <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry Box <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Stone Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+            </ul>
+        </div>
+
+        <div class="left-sidebar-footer">
+            <a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> |<a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a>
+        </div>
+
+    </div>
+</section>
+<!-- Left fixed sidebar -->
+
+<!-- Right cart sidebar fixed -->
+<section>
+    <div class="main-cart-fixed-sidebar" id="CartSidebar">
+        
+        <!-- My cart and Cross icon -->
+        <div class="cartTopHeader">
+            <i class="fa fa-times" onclick="CartSidebarToggle()"></i>
+            <h5>My Cart</h5>
+        </div>
+
+        <!-- All Products list -->
+        <div class="main-all-product-in-cart">
+
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <div class="inCart-footer">
+
+            <!-- Subtotal -->
+            <div class="inCart-subtotal FLEX">
+                <p>Sub Total : </p>
+                <p> ৳ 530</p>
+            </div>
+
+            <!-- Shipping express -->
+            <div class="inCart-shippingAddress FLEX">
+                <p>Shipping (Express) : </p>
+                <p> ৳ 50</p>
+            </div>
+
+            <!-- total  -->
+            <div class="inCart-total FLEX">
+                <p><b>Total Shopping :</b></p>
+                <p><b> ৳ 630</b></p>
+            </div>
+
+            <a href="cart.html"><button class="btn btn-success w-100 my-2 checkoutBtn">Process to checkout</button></a>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- Right cart sidebar fixed -->
+
+
+<!-- Mobile Footer Fixed menu -->
+<section class="mobileFooter-fixed-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-mobile-footer-menu">
+                    <div class="footerMenuItems footerHome">
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>  <span>Home</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerChat">
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>  <span>Chat</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerCart">
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerAccount">
+                        <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>  <span>Account</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Footer Fixed menu -->
+
+<!-- Top Header -->
+<section class="topHeader-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="top-left-section">
+                    <p>Hotline: +88 0180000000000</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="top-right-side">
+
+                    <!-- My Account -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Account 
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Language -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language 
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Main category -->
+                    <!-- <div class="threeMenu">
+                        <li><a class="importer" href="registation.html">Importer &nbsp;</a></li>
+                        <li><a class="marchent" href="registation.html">&nbsp; Vendor &nbsp;</a></li>
+                        <li><a class="vendor" href="registation.html">&nbsp; marchent</a></li>
+                    </div> -->
+
+                    <!-- Currency -->
+                    <div class="dropdown show currency-box">
+                        <a class="btn dropdown-toggle currencyBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/others/bd.svg" alt="" style="width: 20px;"> BDT
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> BDT
+                            </a>
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> USD
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Top Header -->
+
+
+<header class="header-area">
+
+    <!-- Header middle -->
+    <div class="header-middle">
+        <div class="container">
+             <div class="row align-items-center">
+                <div class="col-md-2">
+                   <div class="logo-area wow animate__animated animate__fadeInDown">
+                       <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+                   </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="search-form">
+                        <form action="#" method="POST">
+                           <select name="" id="search-category">
+                               <option value="Products">Products</option>
+                               <option value="Products">Products</option>
+                               <option value="Suppliers">Suppliers</option>
+                           </select>
+                           <input type="text" placeholder="What Are You Looking For..." name="search">
+                           <a href="" class="search-btn"><i class="fa fa-search"></i> Search</a>
+                        </form>
+                    </div>
+                </div>
+                <!-- Card -->
+            <div class="col-md-3 text-right d-flex align-items-center justify-content-end">
+                <div class="login-ragistration">
+                    <a href="registation.html"><i class="fa fa-user w-auto d-inline bg-success text-white p-2 rounded mr-1"></i></a>
+                    <a href="login.html"><i class="fa fa-sign-in w-auto d-inline bg-info text-white p-2 rounded mr-1" aria-hidden="true"></i></a>
+                </div>
+                <div class="middle-cart">
+                    <button type="button" class="btn btn-success BrandColorbutton" onclick="CartSidebarToggle()">
+                        <i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span>
+                      </button>
+                      <span><a href="profile.html"><img src="assets/images/others/happy-girl.jpg" class="rounded-circle w-25" alt=""></a></span>
+                </div>
+            </div>
+             </div>
+        </div>
+    </div>
+
+
+    <!--header bottom-->
+    <div class="header-bottom" id="MainMenu">
+        <div class="container">
+            <nav class="headerNavbar">
+
+
+                <div id="navbarSupportedContent">
+                  <ul>
+                    <li class="nav-item active">
+                      <div class="burger-menu-thumb" id="burgerBar">
+                          <img src="assets/images/icons/menu-white.svg" alt="">
+                      </div>
+                    </li>
+                    <li class="hover-mega-menu Electronics"> <a href="#">Electronics <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                    
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </li>
+                    <li class="hover-mega-menu"><a href="#">Home Apperal <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                        
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </li>
+                    <li><a href="category.html">Man Fashions</a></li>
+                    <li><a href="category.html">Women Fashions</a></li>
+                    <li><a href="category.html">Jewelry</a></li>
+                    <li><a href="category.html">Baby products</a></li>
+                    <li><a href="category.html">Electronics</a></li>
+                  </ul>
+                  <li>
+                      <div class="button_container">
+                        <a href="all-shop.html"><button class="btn"><span>Shop List</span></button></a>
+                    </div>
+                    </li>
+                </div>
+              </nav>
+        </div>
+    </div>
+</header>
+
+
+<section class="wrapper">
+      
+       <!--breadcrumb area -->
+       <nav aria-label="breadcrumb" class="breadcrumb-nav bg undefined CustombreadCrumb">
+           <div class="container">
+               <ol class="breadcrumb CustombreadCrumbOl">
+                   <li class="breadcrumb-item">
+                       <a href=""><i class="fa fa-home"></i></a>
+                   </li>
+                   <li class="breadcrumb-item"><a href="/react/porto/demo6/products/default/15">products</a></li>
+                   <li class="breadcrumb-item active" aria-current="page">Default</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!--product area-->
+        <div class="product-area pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                       <div class="product-details-tab">
+                           <!-- nav tab-->
+                           <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="image1" role="tabpanel" aria-labelledby="home-tab"><img src="assets/images/vegetables/lemon.png" alt=""></div>
+                            <div class="tab-pane fade" id="image2" role="tabpanel" aria-labelledby="profile-tab"><img src="assets/images/products/2.jpg" alt=""></div>
+                            <div class="tab-pane fade" id="image3" role="tabpanel" aria-labelledby="contact-tab"><img src="assets/images/products/3.jpg" alt=""></div>
+                          </div>
+
+                           <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#image1" role="tab" aria-controls="home" aria-selected="true"><img src="assets/images/vegetables/lemon.png" alt=""></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#image2" role="tab" aria-controls="profile" aria-selected="false"><img src="assets/images/products/2.jpg" alt=""></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#image3" role="tab" aria-controls="contact" aria-selected="false"><img src="assets/images/products/3.jpg" alt=""></a>
+                            </li>
+                          </ul>
+
+                       </div>
+                    </div>
+                    <div class="col-xl-7">
+                       <div class="product-content-area">
+                           <h3 class="product-title">Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h3>
+                           <div class="rating-container d-flex align-items-center">
+                               <div class="ratings-full">
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                               </div>
+                               <a href="" class="link-to-tab rating-revies ml-1">(6 reviews)</a>
+                           </div>
+                           <div class="product-price">$9.00</div>
+                           <p class="short-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia molestias ea itaque sit assumenda nesciunt. Reiciendis autem, nostrum nulla at quae ipsum corporis consequuntur mollitia vel enim rem! Veniam accusantium, recusandae omnis laboriosam asperiores non tenetur sequi quisquam rem autem cumque perferendis tempore officia placeat facilis unde nihil eius ad.</p>
+                           
+                           <div class="color-vary d-flex align-items-center">
+                               <span>Color</span>
+                               <ul class="color-block">
+                                   <li class="black"></li>
+                                   <li class="red"></li>
+                                   <li class="blue"></li>
+                               </ul>
+                           </div>
+                           <div class="size-vary d-flex align-items-center mt-3">
+                            <span>Size</span>
+                            <ul class="size-block">
+                                <li><a href="">S</a></li>
+                                <li><a href="">M</a></li>
+                                <li><a href="">L</a></li>
+                                <li><a href="">XL</a></li>
+                                <li><a href="">2XL</a></li>
+                            </ul>
+                          </div>
+                          <hr class="long-divider"></hr>
+                          <div class="product-qty d-flex align-items-center">
+                              <label for="qty">Qty:</label>
+                              <div class="product-qty-group ml-3">
+                                  <div class="input-group">
+                                      <button class="minus">-</button>
+                                      <input class="quantity form-control" value="1" type="text" min="1" max="1000000">
+                                      <button class="plus">+</button>
+                                  </div>
+                              </div>
+                              <ul class="social-share ml-3">
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                              </ul>
+                          </div>
+
+                          <!-- Three butn -->
+                          <div class="threeBtn mt-4">
+                              <ul>
+                                <li class="btn btn-success"><a href="#">Buy Now</a></li>
+                                <li class="btn btn-secondary"><a href="#"><i class="fas fa-heart"></i> Wishlist</a></li>
+                                <li class="btn btn-danger BrandColor"><a href="#"><i class="fas fa-shopping-cart"></i> Add to Cart</a></li>
+                              </ul>
+                          </div>
+                          <hr class="long-divider"></hr>
+                          
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- product description area -->
+        <div class="product-desc mt-5">
+            <div class="container">
+                <div class="row">
+
+                        <div class="desc-tab">
+                            <!-- description nav tab-->
+                            <ul class="nav nav-tabs product-desc-padding" id="product-single-tab" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="desc-tab" data-toggle="tab" href="#desc" role="tab" aria-controls="desc" aria-selected="true">Description</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Additional Info</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">Shipping & Returns</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
+                                </li>
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active mt-5 pb-5 mobileTab" id="desc" role="tabpanel" aria-labelledby="desc-tab">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, in nihil odit eum saepe eligendi quibusdam autem minus libero consectetur dolorem minima. Iusto porro reprehenderit aperiam in fugiat odit id!</p>
+                                    <ul class="ml-3">
+                                        <li><a href=""><i class="fa fa-check"></i> Any Product types that You want - Simple, Configurable</a></li>
+                                        <li><a href=""><i class="fa fa-check"></i> Downloadable/Digital Products, Virtual Products</a></li>
+                                        <li><a href=""><i class="fa fa-check"></i> Inventory Management with Backordered items</a></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eligendi itaque vero? Quae dignissimos accusamus esse, aut quas distinctio odit labore placeat consectetur nostrum. Consectetur explicabo excepturi libero, hic neque perspiciatis modi, ducimus aliquam recusandae placeat deserunt, nemo vitae voluptas.</p>
+                                </div>
+                                <div class="tab-pane fade mt-5 pb-5 mobileTab" id="info" role="tabpanel" aria-labelledby="info-tab">
+                                    <ul class="list-none">
+                                        <li class="d-flex align-item-center">
+                                            <label>Color:</label>
+                                            <p>Black, Brown, Coffee</p>
+                                        </li>
+                                        <li class="d-flex align-item-center">
+                                            <label>Style:</label>
+                                            <p>Vintage</p>
+                                        </li>
+                                        <li class="d-flex align-item-center">
+                                            <label>Material:</label>
+                                            <p>PU, Faux Leather</p>
+                                        </li>
+                                        <li class="d-flex align-item-center">
+                                            <label>Closure Type:</label>
+                                            <p>Hasp</p>
+                                        </li>
+                                        <li class="d-flex align-item-center">
+                                            <label>Bags Structure:</label>
+                                            <p>Cell phone Pocket, Zipper Pouch</p>
+                                        </li>
+                                        <li class="d-flex align-item-center">
+                                            <label>Size:</label>
+                                            <p>L</p>
+                                        </li>
+                                        <li class="d-flex align-item-center">
+                                            <label>Capacity:</label>
+                                            <p>15.6 Inch Laptop</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade mt-5 pb-5 mobileTab" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                                    <h6 class="mb-2">Free Shipping</h6>
+                                    <p class="mb-0">We deliver to over 100 countries around the world. For full details of the delivery options we offer, please view our Delivery information
+                                        We hope you’ll love every purchase, but if you ever need to return an item you can do so within a month of receipt. For full details of how to make a return, please view our <a href="" class="text-primary">Delivery information</a></p>
+                                    
+                                </div>
+                                <div class="tab-pane fade mt-5 pb-5 mobileTab" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                    <div class="rating-container description-rating d-flex align-items-center">
+                                        <h4 class="mb-0 mr-2">Average Rating:</h4>
+                                        <div class="ratings-full">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <!--comments-->
+                                    <div class="comments mb-6 pt-5">
+                                        <ul>
+                                            <li>
+                                                <div class="comment mb-5 d-flex">
+                                                    <figure class="comment-img">
+                                                        <a href=""><img src="assets/images/review/1.jpg" alt=""></a>
+                                                    </figure>
+                                                    <div class="comment-part">
+                                                        <div class="comment-rating rating-container mb-0">
+                                                            <div class="ratings-full">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-user">
+                                                            <h5>person's name</h5>
+                                                            <span class="comment-meta">December 19, 2020 at 2:19 pm</span>
+                                                        </div>
+                                                        <div class="comment-para">
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas deleniti tempora? Saepe in incidunt delectus quasi architecto tenetur accusamus culpa, exercitationem dolorem numquam, perspiciatis beatae labore modi doloremque, possimus fugit cupiditate. Temporibus maxime consequatur exercitationem doloremque pariatur nulla aperiam.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="comment d-flex">
+                                                    <figure class="comment-img">
+                                                        <a href=""><img src="assets/images/review/1.jpg" alt=""></a>
+                                                    </figure>
+                                                    <div class="comment-part">
+                                                        <div class="comment-rating rating-container mb-0">
+                                                            <div class="ratings-full">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-user">
+                                                            <h5>person's name</h5>
+                                                            <span class="comment-meta">December 19, 2020 at 2:19 pm</span>
+                                                        </div>
+                                                        <div class="comment-para">
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas deleniti tempora? Saepe in incidunt delectus quasi architecto tenetur accusamus culpa, exercitationem dolorem numquam, perspiciatis beatae labore modi doloremque, possimus fugit cupiditate. Temporibus maxime consequatur exercitationem doloremque pariatur nulla aperiam.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- comment form section-->
+        <div class="comment-form ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="comment-form-wrapper">
+                            <h5>Add a Review</h5>
+                            <p class="mb-0">Your email address will not be published. Required fields are marked *</p>
+                            <div class="rating-container mb-0">
+                                <div class="ratings-full">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <form action="" method="POST" class="mt-3">
+                                <textarea class="form-control mb-3" name="" id="" cols="30" rows=3 placeholder="Comment* "></textarea>
+                                <div class="username mb-3 d-flex align-items-center">
+                                    <input type="text " class="form-control " name="name" placeholder="Name* ">
+                                    <input type="email " class="form-control ml-3" name="email" placeholder="Email* ">
+                                    <input type="Phone " class="form-control ml-3" name="Phone" placeholder="Phone* ">
+                                </div>
+                                <a href="" class="submit-btn btn-outline-primary">SUBMIT <i class="fa fa-arrow-right"></i></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<!-- Related Products -->
+<section class="single-page-related-products">
+    <div class="container">
+        <!-- title -->
+        <div class="StyleOnetitle">
+            <h2>Related Products</h2>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-md-2 col-sm-6">
+                <div class="cat-right-product-box">
+                    <img src="assets/images/vegetables/lemon.png" alt="">
+                    <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                    
+                    <!-- Rating div -->
+                    <div class="cat-card-rating">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                            <li>(3 Rating)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Price and Add to cart -->
+                    <div class="price-and-addto-cart">
+                        <p class="cat-product-price">$22,000</p>
+                        <p class="AddtoCart">Add to cart</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <div class="cat-right-product-box">
+                    <img src="assets/images/products/2.jpg" alt="">
+                    <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                    
+                    <!-- Rating div -->
+                    <div class="cat-card-rating">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                            <li>(3 Rating)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Price and Add to cart -->
+                    <div class="price-and-addto-cart">
+                        <p class="cat-product-price">$22,000</p>
+                        <p class="AddtoCart">Add to cart</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <div class="cat-right-product-box">
+                    <img src="assets/images/products/3.jpg" alt="">
+                    <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                    
+                    <!-- Rating div -->
+                    <div class="cat-card-rating">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                            <li>(3 Rating)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Price and Add to cart -->
+                    <div class="price-and-addto-cart">
+                        <p class="cat-product-price">$22,000</p>
+                        <p class="AddtoCart">Add to cart</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <div class="cat-right-product-box">
+                    <img src="assets/images/products/5.jpg" alt="">
+                    <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                    
+                    <!-- Rating div -->
+                    <div class="cat-card-rating">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                            <li>(3 Rating)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Price and Add to cart -->
+                    <div class="price-and-addto-cart">
+                        <p class="cat-product-price">$22,000</p>
+                        <p class="AddtoCart">Add to cart</p>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-md-2 col-sm-6">
+                <div class="cat-right-product-box">
+                    <img src="assets/images/products/7.jpg" alt="">
+                    <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                    
+                    <!-- Rating div -->
+                    <div class="cat-card-rating">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                            <li>(3 Rating)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Price and Add to cart -->
+                    <div class="price-and-addto-cart">
+                        <p class="cat-product-price">$22,000</p>
+                        <p class="AddtoCart">Add to cart</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-2 col-sm-6">
+                <div class="cat-right-product-box">
+                    <img src="assets/images/products/6.jpg" alt="">
+                    <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+                    
+                    <!-- Rating div -->
+                    <div class="cat-card-rating">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                            <li>(3 Rating)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Price and Add to cart -->
+                    <div class="price-and-addto-cart">
+                        <p class="cat-product-price">$22,000</p>
+                        <p class="AddtoCart">Add to cart</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- Related Products -->
+
+
+
+
+
+  
+
+<!-- footer area-->
+<footer class="footer-area">
+
+    <div class="ClickTop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- start of footer middle-->
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget">
+                        <h4 class="widget-title">Location</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <label>Phone:</label>
+                                <a href="#">Toll Free (123) 456-7890</a>
+                            </li>
+                            <li>
+                                <label>Email:</label>
+                                <a href="#">mail@gmail.com</a>
+                            </li>
+                            <li>
+                                <label>Address:</label>
+                                <a href="#">Hatirpul</a>
+                            </li>
+                            <li>
+                                <label>WORKING DAYS/HOURS:</label>
+                            </li>
+                            <li>
+                                <a href="#">Mon - Sun / 9:00 AM - 8:00 PM</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">My Account</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget-instagram">
+                        <h4 class="widget-title">About NavieaSoft</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bordr-bottom"></div>
+            <div class="footer-content d-flex">
+                <div class="footer-left">
+                    <p>
+                        Navieasoft eCommerce © 2020. All Rights Reserved
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area -->
+
+
+
+    <!-- jquery js -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap popper js -->
+    <script src="assets/js/popper.js"></script>
+    <!-- theme bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- main js-->
+    <script src="assets/js/borhan.js"></script>
+</body>
+
+</html>
