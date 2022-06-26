@@ -77,13 +77,13 @@
 
 <header>
     <!-- Left fixed sidebar -->
-    <section>
-    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+    <section class="profile-sidebar-section">
+    <div class="main-left-fixed-sidebar">
         <div class="sidebar-logo-close-icon">
             <div class="sidebar-logo-header">
                 <img src="assets/images/logo.svg" alt="">
             </div>
-            <div class="cross-icon" id="CloseSidebar">
+            <div class="cross-icon">
                 <i class="fa fa-times"></i>
             </div>
         </div>
@@ -137,13 +137,13 @@
     <!-- Left fixed sidebar -->
 
     <!-- Right cart sidebar fixed -->
-    <section>
-        <div class="main-cart-fixed-sidebar" id="CartSidebar">
+    <section class="cart-sidebar-section">
+        <div class="main-cart-fixed-sidebar" id="cart-body">
             
             <!-- My cart and Cross icon -->
-            <div class="cartTopHeader">
-                <i class="fa fa-times" onclick="CartSidebarToggle()"></i>
-                <h5>My Cart</h5>
+            <div class="cartTopHeader" id="cart-cross">
+                <i class="fa fa-times"></i>
+                <h5>Price</h5>
             </div>
 
             <!-- All Products list -->
@@ -158,49 +158,48 @@
                     <!-- middle content -->
                     <div class="inCart-middle-content">
                         <h2>Nylon Regular Backpack - Red and Black</h2>
-                        <p>Price: $350</p>
-                        <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
-                    </div>
-
-                    <!-- delete icon -->
-                    <div class="inCart-delete">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <div class="qty-with-price">
+                            <p>
+                               Qty: <input value="1" type="number">
+                            </p>
+                            <p class="cart-product-price">Price: $350</p>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Single products -->
                 <div class="single-product-cart">
                     <div class="inCart-image">
-                        <img src="assets/images/fruits/banner2.png" alt="">
+                        <img src="assets/images/fruits/banner1.png" alt="">
                     </div>
 
                     <!-- middle content -->
                     <div class="inCart-middle-content">
                         <h2>Nylon Regular Backpack - Red and Black</h2>
-                        <p>Price: $350</p>
-                        <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
-                    </div>
-
-                    <!-- delete icon -->
-                    <div class="inCart-delete">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <div class="qty-with-price">
+                            <p>
+                               Qty: <input value="1" type="number">
+                            </p>
+                            <p class="cart-product-price">Price: $350</p>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Single products -->
                 <div class="single-product-cart">
                     <div class="inCart-image">
-                        <img src="assets/images/fruits/banner5.png" alt="">
+                        <img src="assets/images/fruits/banner1.png" alt="">
                     </div>
 
                     <!-- middle content -->
                     <div class="inCart-middle-content">
                         <h2>Nylon Regular Backpack - Red and Black</h2>
-                        <p>Price: $350</p>
-                        <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
-                    </div>
-
-                    <!-- delete icon -->
-                    <div class="inCart-delete">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <div class="qty-with-price">
+                            <p>
+                               Qty: <input value="1" type="number">
+                            </p>
+                            <p class="cart-product-price">Price: $350</p>
+                        </div>
                     </div>
                 </div>
 
@@ -223,11 +222,20 @@
 
                 <!-- total  -->
                 <div class="inCart-total FLEX">
-                    <p><b>Total Shopping :</b></p>
-                    <p><b> ৳ 630</b></p>
+                    <p>Total Shopping :</p>
+                    <p> ৳ 630</p>
                 </div>
 
-                <a href="cart.html"><button class="btn btn-success w-100 my-2 checkoutBtn">Process to checkout</button></a>
+                <!-- cart or checkout btn -->
+                <div class="cart-with-checkout">
+                    <a href="cart.html">
+                        <button class="checkoutBtn">View cart</button>
+                    </a>
+                    
+                    <a href="checkout.html">
+                        <button class="checkoutBtn checkout-btn">Checkout</button>
+                    </a>
+                </div>
 
             </div>
 
@@ -244,6 +252,77 @@
             <div class="header-mega-menu">
                 <i class="fas fa-bars"></i>
                 <p>All Sports</p>
+
+                <!-- sidebar menu -->
+                <div>
+                    <div class="hero-left-sidebar">
+                        <ul>
+                            
+                            <li class="hover-sidebar-mega-menu">
+                                <a href="category.html"><img src="./assets/images/new-icons/sports.png" alt=""> Sports </a>
+                                <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                        
+                                <div class="main-hover-sidebar-mega-menu-wrapper">
+
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Busketball</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cricket</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Football</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Batminton</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cycling</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Running</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Table Tannis</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Trekking</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Walking</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
+
+                                            
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cricket</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Football</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Batminton</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cycling</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Running</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Table Tannis</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Trekking</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Walking</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="hover-sidebar-mega-menu">
+                                <a href="category.html">Man</a>
+                                    <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                <!-- dropdown menu -->
+                                <div class="main-hover-sidebar-mega-menu-wrapper">
+
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Busketball</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cricket</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Football</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Batminton</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cycling</a></li>
+                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li><a href="category.html">Women</a></li>
+                            <li><a href="category.html">Kids</a></li>
+                            <li><a href="category.html">Sports Accesories</a></li>
+                            <li><a href="category.html">Eid Offers</a></li>
+                            <li><a href="category.html"> <img src="./assets/images/new-icons/gift-card.jpg" alt=""> Gift Card</a></li>
+                            <li><a href="category.html"> <img src="./assets/images/new-icons/made-in-bd.png" alt=""> Made In Bangladesh</a></li>
+                            <li><a href="category.html"> <img src="./assets/images/new-icons/eco.png" alt=""> Eco Design Products</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- logo area -->
@@ -263,7 +342,7 @@
             <div class="user-icons-wrapper">
 
                 <!-- sign in -->
-                <div class="icon-box">
+                <div class="icon-box" id="signIn">
                     <div class="icon-thumb">
                         <img src="./assets/images/new-icons/Account-01.png" alt="">
                     </div>
@@ -288,7 +367,7 @@
             </div>
             
             <!-- cart -->
-            <div class="header-cart">
+            <div class="header-cart" id="cart">
 
                 <!-- icon -->
                 <div class="header-cart-icon">
@@ -301,12 +380,97 @@
                     <p>0 item</p>
                 </div>
 
-                <!-- <button type="button" class="btn btn-success BrandColorbutton" onclick="CartSidebarToggle()">
-                    <i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span>
-                </button> -->
-
             </div>
         </div>
+
+        <!-- login / Register -->
+        <div class="main-login-wrapper">
+            
+            <!-- login -->
+            <form action="" id="login">
+                <div>
+                    <div class="auth-header">
+                        <h2><i class="fas fa-sign-in-alt"></i> Login In</h2>
+                        <i id="login-cross" class="fas fa-times"></i>
+                    </div>
+                    <div class="form-content">
+                        <div class="login-box">
+                            <div class="form-grouped">
+                                <label for="">Email</label>
+                            <input type="text" placeholder="Email address / Username">
+                            </div>
+                            <div class="form-grouped">
+                                <label for="">Password</label>
+                            <input type="text" placeholder="Password">
+                            </div>
+                            <br>
+                            <div class="login-group">
+                                <button class="login-submit">Login</button>
+                                <a href="#">Forget Your Password?</a>
+                            </div>
+                            
+                            <span class="donthaveaccount">Don't have any accounts? <a id="register-btn" class="text-decoration-none" href="javascript:void(0)">Register here</a></span>
+                        </div>
+                        <div class="Auth-login">
+                            <a href="#"><button class="loginBtnGoogle "><img src="./assets/images/new-icons/g-logo.png" alt=""> &nbsp; login with google account </button></a>
+                            <a href="#"><button class="loginBtnFb"><img src="./assets/images/new-icons/facebook.png" alt=""> &nbsp; login with facebook account </button></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Register -->
+            <form action="" id="register">
+                <div>
+                    <div class="auth-header">
+                        <h2><i class="fas fa-sign-in-alt"></i> Sign Up</h2>
+                        <i id="register-cross" class="fas fa-times"></i>
+                    </div>
+                    <div class="form-content register-form-content">
+                        <div class="login-box">
+    
+                            <!-- first name -->
+                            <div class="form-grouped">
+                                <label for="">First name</label>
+                                <input type="text" placeholder="First name">
+                            </div>
+    
+                            <!-- last name -->
+                            <div class="form-grouped">
+                                <label for="">Last name</label>
+                                <input type="text" placeholder="Last name">
+                            </div>
+    
+                            <!-- email -->
+                            <div class="form-grouped">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Email address">
+                            </div>
+    
+                            <!-- password -->
+                            <div class="form-grouped">
+                                <label for="">Password</label>
+                                <input type="password" placeholder="Password">
+                            </div>
+    
+                            <!-- password -->
+                            <div class="form-grouped">
+                                <label for="">Confirm Password</label>
+                                <input type="password" placeholder="Confirm password">
+                            </div>
+                            <div class="login-group">
+                                <button type="submit" class="login-submit">Register</button>
+                            </div>
+                            
+                            <span class="donthaveaccount">Already have an accounts? <a id="login-btn" class="text-decoration-none" href="javascript:void(0)">Login here</a></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        
 
     </section>
 </header>

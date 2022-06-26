@@ -56,17 +56,65 @@ var swiper = new Swiper(".featuredProduct", {
   }
 });
 
-// New Sidebar toggle
-const sideBar = document.getElementById('LeftSidebar');
-const Bars = document.getElementById('burgerBar'); 
-Bars.addEventListener('click', function() {
-  sideBar.classList.toggle('active'); 
+
+// login / register
+const loginElement = document.getElementById('login')
+const loginCross = document.getElementById('login-cross')
+const registerCross = document.getElementById('register-cross')
+const signInBtn = document.getElementById('signIn')
+
+// register
+const registerBtn = document.getElementById('register-btn')
+const registerElement = document.getElementById('register')
+
+const loginBtn = document.getElementById('login-btn')
+
+// login popup
+signInBtn.addEventListener('click', function () {
+  loginElement.classList.add('active-login')
+
+  // click to remove login form
+  loginCross.addEventListener('click', function() {
+    loginElement.classList.remove('active-login')
+  })
+
+  // click to remove login class and show register class
+  registerBtn.addEventListener('click', function() {
+    // first remove/hide login form
+    loginElement.classList.remove('active-login')
+
+    // after show register from
+    registerElement.classList.add('active-register')
+
+    // click to cross then hide register
+    registerCross.addEventListener('click', function() {
+      registerElement.classList.remove('active-register')
+    })
+
+    // if click to login then go back
+    loginBtn.addEventListener('click', function() {
+      registerElement.classList.remove('active-register')
+      loginElement.classList.add('active-login')
+    })
+  })
+
 })
 
-const CloseSidebar = document.getElementById('CloseSidebar');
-CloseSidebar.addEventListener('click', function() {
-  sideBar.classList.remove('active');
-})
+
+
+
+
+// New Sidebar toggle
+// const sideBar = document.getElementById('LeftSidebar');
+// const Bars = document.getElementById('burgerBar'); 
+// Bars.addEventListener('click', function() {
+//   sideBar.classList.toggle('active'); 
+// })
+
+// const CloseSidebar = document.getElementById('CloseSidebar');
+// CloseSidebar.addEventListener('click', function() {
+//   sideBar.classList.remove('active');
+// })
 
 // Animate items
 new WOW().init();
@@ -99,97 +147,32 @@ $(document).ready(function(){
 
 
 
-var miniCategroy = new Swiper('.mini-categroy', {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    767: {
-      slidesPerView: 6,
-      spaceBetween: 10,
-    },
-    1024: {
-      slidesPerView: 10,
-      spaceBetween: 10,
-    },
-  }
-});
-
-// ExpressSlider
-var ExpressSlider = new Swiper('.ExpressSlider', {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    767: {
-      slidesPerView: 6,
-      spaceBetween: 10,
-    },
-    1024: {
-      slidesPerView: 8,
-      spaceBetween: 10,
-    },
-  }
-});
-
-
 // toggle right cart sidebar
-function CartSidebarToggle() {
-  var CartSidebarMenu = document.getElementById("CartSidebar");
-  
-  if (CartSidebarMenu.style.display === "none"  || CartSidebarMenu.style.display === "") {
-    CartSidebarMenu.style.display = "block";
-  } else {
-    CartSidebarMenu.style.display = "none";
-  }
-}
+
+const cartIcon = document.getElementById('cart')
+const cartElement = document.getElementById('cart-body')
+const cartCross = document.getElementById('cart-cross')
+
+cartIcon.addEventListener('click', function() {
+  cartElement.classList.add('active-cart-body')
+
+  // cross
+  cartCross.addEventListener('click', function() {
+    cartElement.classList.remove('active-cart-body')
+  })
+})
 
 
-// Mobile toggle menu
-function OpenMobileMenu() {
-  var MobileSidebarMenu = document.getElementById("LeftSidebar");
-  if (MobileSidebarMenu.style.display === "none" || MobileSidebarMenu.style.display === "") {
-    MobileSidebarMenu.style.display = "block";
-  } else {
-    MobileSidebarMenu.style.display = "none";
-  }
-}
+// // Mobile toggle menu
+// function OpenMobileMenu() {
+//   var MobileSidebarMenu = document.getElementById("LeftSidebar");
+//   if (MobileSidebarMenu.style.display === "none" || MobileSidebarMenu.style.display === "") {
+//     MobileSidebarMenu.style.display = "block";
+//   } else {
+//     MobileSidebarMenu.style.display = "none";
+//   }
+// }
 
-
-// Transition sidebar
-function MobileSidebarMenu(){
-
-    // const MobileSidebarMenu = document.getElementById("LeftSidebar");
-    const bargerMenu = document.querySelector('.Electronics');
-
-    bargerMenu.classList.add('activeSidebar');
-}
-
-// Mobile Cart Sidebar
-function MobileCartSidebarToggle() {
-  var MobileCartSidebarMenu = document.getElementById("CartSidebar");
-  
-  if (MobileCartSidebarMenu.style.display === "none" || MobileCartSidebarMenu.style.display === "") {
-    MobileCartSidebarMenu.style.display = "block";
-  } else {
-    MobileCartSidebarMenu.style.display = "none";
-  }
-}
 
 
 
@@ -250,34 +233,3 @@ function myFunction() {
 
 }
 
-
-// Countdown
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 31, 2022 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  document.querySelector(".days").innerHTML = days;
-  document.querySelector(".hours").innerHTML = hours;
-  document.querySelector(".minutes").innerHTML = minutes;
-  document.querySelector(".seconds").innerHTML = seconds;
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
