@@ -57,6 +57,9 @@ var swiper = new Swiper(".featuredProduct", {
 });
 
 
+// range
+
+
 // login / register
 const loginElement = document.getElementById('login')
 const loginCross = document.getElementById('login-cross')
@@ -100,19 +103,20 @@ signInBtn.addEventListener('click', function () {
 
 })
 
-// test
-const parentMobileMenu = document.getElementById('parent-mobile-menu')
-const parentUL = document.getElementById('parent-ul');
-console.log(parentUL.children.length);
-const childrenElement=parentUL.children;
-const arr = [1, 2, 3, 4]
-console.log(childrenElement);
+// sidebar toggle card
+// const categorySidebarItem = document.getElementById("category-sidebar")
+// const categoryIcon = document.getElementById('category-icon')
 
-  for (let i = 0; i <childrenElement.length; i++) {
-    const element = childrenElement[i];
-    console.log(element)
+const categorySidebarTitle = document.querySelectorAll('div#category-sidebar-title')
+
+for (let i = 0; i < categorySidebarTitle.length; i++) {
+  categorySidebarTitle[i].addEventListener('click', function() {
+
+    categorySidebarTitle[i].parentNode.classList.toggle('active-category-sidebar-item')
     
-  }
+    console.log(categorySidebarTitle[i].lastElementChild.classList.toggle('active-category-icon'))
+  })
+}
 
 
 
@@ -226,24 +230,4 @@ window.addEventListener('scroll', () => {
   })
 });
 
-// Sticky menu
-window.onscroll = function() {myFunction()};
-
-var MainMenu = document.getElementById("MainMenu");
-var stickyMenu = MainMenu.offsetTop;
-
-function myFunction() {
-
-  if (window.pageYOffset >= stickyMenu) {
-
-    MainMenu.classList.add("stickyMenu")
-    document.querySelector('stickyMenu').style.zIndex = "1000";
-
-  } else {
-
-    MainMenu.classList.remove("stickyMenu");
-
-  }
-
-}
 
