@@ -100,6 +100,20 @@ signInBtn.addEventListener('click', function () {
 
 })
 
+// test
+const parentMobileMenu = document.getElementById('parent-mobile-menu')
+const parentUL = document.getElementById('parent-ul');
+console.log(parentUL.children.length);
+const childrenElement=parentUL.children;
+const arr = [1, 2, 3, 4]
+console.log(childrenElement);
+
+  for (let i = 0; i <childrenElement.length; i++) {
+    const element = childrenElement[i];
+    console.log(element)
+    
+  }
+
 
 
 
