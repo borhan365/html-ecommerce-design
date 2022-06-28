@@ -56,10 +56,6 @@ var swiper = new Swiper(".featuredProduct", {
   }
 });
 
-
-// range
-
-
 // login / register
 const loginElement = document.getElementById('login')
 const loginCross = document.getElementById('login-cross')
@@ -103,10 +99,25 @@ signInBtn.addEventListener('click', function () {
 
 })
 
-// sidebar toggle card
-// const categorySidebarItem = document.getElementById("category-sidebar")
-// const categoryIcon = document.getElementById('category-icon')
+// tabs
+// const tabs = document.querySelectorAll('[data-tab-target]')
+// const tabContents = document.querySelectorAll('[data-tab-content]')
 
+// tabs.forEach(tab => {
+//   tab.addEventListener('click', () => {
+//     const target = document.querySelector(tab.dataset.tabTarget)
+//     tabContents.forEach(tabContent => {
+//       tabContent.classList.remove('active')
+//     })
+//     tabs.forEach(tab => {
+//       tab.classList.remove('active')
+//     })
+//     tab.classList.add('active')
+//     target.classList.add('active')
+//   })
+// })
+
+// sidebar toggle card
 const categorySidebarTitle = document.querySelectorAll('div#category-sidebar-title')
 
 for (let i = 0; i < categorySidebarTitle.length; i++) {
@@ -118,21 +129,47 @@ for (let i = 0; i < categorySidebarTitle.length; i++) {
   })
 }
 
+// click to open mobile menu and close
+const mobileMenuCross = document.getElementById('mobile-menu-cross')
+const mobileBarsIcon = document.getElementById('mobile-header-bars')
+const mobileSidebarMenu = document.getElementById('main-mobile-mega-menu')
+
+mobileBarsIcon.addEventListener('click', function(){
+  mobileSidebarMenu.classList.toggle('active-mega-menu')
+})
+
+mobileMenuCross.addEventListener('click', function(){
+  mobileSidebarMenu.classList.remove('active-mega-menu')
+})
 
 
+// mobile mega menu
+const parentMenu = document.querySelectorAll('i#parent-caret')
+for(let i = 0; i < parentMenu.length; i++) {
+  parentMenu[i].addEventListener('click', function(){
+    parentMenu[i].parentNode.parentElement.classList.toggle('active-parent-li')
+    parentMenu[i].classList.toggle('active-parent-caret')
+  })
+}
 
+// children menu
+const childrenMenu = document.querySelectorAll('i#childen-caret')
+for(let i = 0; i < childrenMenu.length; i++) {
+  childrenMenu[i].addEventListener('click', function(){
+    childrenMenu[i].parentNode.parentElement.classList.toggle('active-children-li')
+    childrenMenu[i].classList.toggle('active-children-caret')
+  })
+}
 
-// New Sidebar toggle
-// const sideBar = document.getElementById('LeftSidebar');
-// const Bars = document.getElementById('burgerBar'); 
-// Bars.addEventListener('click', function() {
-//   sideBar.classList.toggle('active'); 
-// })
+// child menu
+const childMenu = document.querySelectorAll('i#child-caret')
+for(let i = 0; i < childMenu.length; i++) {
+  childMenu[i].addEventListener('click', function(){
+    childMenu[i].parentNode.parentElement.classList.toggle('active-child-li')
+    childMenu[i].classList.toggle('active-child-caret')
+  })
+}
 
-// const CloseSidebar = document.getElementById('CloseSidebar');
-// CloseSidebar.addEventListener('click', function() {
-//   sideBar.classList.remove('active');
-// })
 
 // Animate items
 new WOW().init();
@@ -153,18 +190,6 @@ var HeroRightSlider = new Swiper('.hero-right-slider', {
   });
 
 
-// Profile page order list
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-
-
-
 // toggle right cart sidebar
 
 const cartIcon = document.getElementById('cart')
@@ -181,40 +206,6 @@ cartIcon.addEventListener('click', function() {
 })
 
 
-// // Mobile toggle menu
-// function OpenMobileMenu() {
-//   var MobileSidebarMenu = document.getElementById("LeftSidebar");
-//   if (MobileSidebarMenu.style.display === "none" || MobileSidebarMenu.style.display === "") {
-//     MobileSidebarMenu.style.display = "block";
-//   } else {
-//     MobileSidebarMenu.style.display = "none";
-//   }
-// }
-
-
-
-
-
-
-// Click to top
-
-// const ClickToTop = document.querySelector('.ClickTop');
-
-// window.addEventListener('scroll', () => {
-
-//     if (window.pageYOffset > 100) {
-//         ClickToTop.classList.add("active");
-//     } else {
-//         ClickToTop.classList.remove("active");
-//     }
-// })
-
-// ClickToTop.addEventListener("click", function(){
-//     window.scrollTo(0, 0);
-// });
-
-
-
 // Click to top menu here
 
 const topButton = document.querySelector('.ClickTop');
@@ -229,5 +220,7 @@ window.addEventListener('scroll', () => {
     window.scrollTo(0, 0);
   })
 });
+
+
 
 

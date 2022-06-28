@@ -315,4 +315,45 @@
     .featured-product-content h3{
         padding: 5px 0px;
     }
+    .search-form form {
+        display: flex;
+    }
+    .search-form form input {
+        width: 155px;
+    }
+    .footerMenuItems {
+        justify-content: flex-end;
+    }
+    .search-form form a.search-btn i {
+        font-size: 17px;
+        padding: 0px 3px;
+    }
+    .search-form form input{
+        padding: 5px;
+    }
+    .product-benifits {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    .product-benifit-content h2 {
+        font-family: var(--roboto);
+        font-size: 17px;
+    }
+    .product-benifit-content p {
+        font-size: 14px;
+    }
+    .product-benifit-item {
+        grid-gap: 10px;
+    }
+    .product-review-wrapper {
+        max-width: 100%;
+    }
+    .product-tab-header {
+        height: 50px;
+    }
+    .product-tab-item {
+        padding: 5px 10px !important;
+        font-size: 15px;
+        border-radius: unset !important;
+    }
 }
