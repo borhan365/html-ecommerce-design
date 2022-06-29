@@ -56,6 +56,7 @@ var swiper = new Swiper(".featuredProduct", {
   }
 });
 
+
 // login / register
 const loginElement = document.getElementById('login')
 const loginCross = document.getElementById('login-cross')
@@ -99,23 +100,32 @@ signInBtn.addEventListener('click', function () {
 
 })
 
-// tabs
-// const tabs = document.querySelectorAll('[data-tab-target]')
-// const tabContents = document.querySelectorAll('[data-tab-content]')
+// click to increase & decrease value
+const increaseBtn = document.querySelectorAll('button#increase')
+const decreaseBtn = document.querySelectorAll('button#decrease')
+const valueBox = document.getElementById('number')
 
-// tabs.forEach(tab => {
-//   tab.addEventListener('click', () => {
-//     const target = document.querySelector(tab.dataset.tabTarget)
-//     tabContents.forEach(tabContent => {
-//       tabContent.classList.remove('active')
-//     })
-//     tabs.forEach(tab => {
-//       tab.classList.remove('active')
-//     })
-//     tab.classList.add('active')
-//     target.classList.add('active')
-//   })
-// })
+console.log(increaseBtn)
+
+  // start button for minus 
+  for(i=0; i<decreaseBtn.length; i++){
+      decreaseBtn[i].addEventListener('click', function(){
+        valueBox.value--
+        if(valueBox.value < 0){
+            valueBox.value = 0;
+        }
+    }) 
+  }
+ 
+ // start button for add count 
+    for(i=0; i<increaseBtn.length; i++){
+        increaseBtn[i].addEventListener('click', function(){
+          valueBox.value++
+          increaseBtn[i].classList.add('class-added')
+        })
+    }
+// end button for add count
+
 
 // sidebar toggle card
 const categorySidebarTitle = document.querySelectorAll('div#category-sidebar-title')

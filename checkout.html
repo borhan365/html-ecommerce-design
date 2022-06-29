@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ecommerce Home Page</title>
 
     <!-- favicon -->
@@ -21,6 +22,9 @@
 
     <!-- Animate -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.exzoom.css">
 
     <!-- theme css -->
     <link rel="stylesheet" href="assets/css/woomart.css">
@@ -595,194 +599,199 @@
     </section>
 </header>
 
-
-<!-- Cart Section -->
-<section class="cart-section">
-    <div class="container">
-        <div class="row">
-
-            <!-- Left All Added Products -->
-            <div class="col-md-8">
-                <div class="card-left-container">
-                    <div class="select-all my-3 rounded">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1"><span>SELECT ALL (2 ITEM(S))</span>
-                        </div>
-                        
-                        <span><i class="fa fa-trash" aria-hidden="true"></i> DELETE</span>
-                    </div>
-
-                    <!-- All Cart Added Products -->
-                    <div class="all-product-lists">
-                        <!-- item -->
-                        <div class="card bg-light mb-2" style="max-width: 100%">
-                            <div class="card-header bg-white">
-                                <div class="form-check d-flex justify-content-between">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <span class="cart-delete-item"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2">
-                                        <div class="cart-product-image">
-                                           <a href="single.html">
-                                                <img src="./assets/images/new-bag/1.jpg" alt="">
-                                           </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="cart-product-name-and-details">
-                                            <a href="single.html">
-                                                <h2>COMPACT TRAVEL TREKKING BACKPACK TRAVEL 10 L BLACK
-                                                </h2>
-                                            </a>
-                                            <p>Brand: Samsung, Color Family: Black</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 text-center">
-                                        <div class="card-product-price">
-                                            <span>৳ 3,999</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="cart-product-increse-decrese text-right">
-                                            <button class="Carts minus" id="decrease">-</button>
-                                            <input type="text" class="cart-product-item" id="number" value="0">
-                                            <!-- <span class="cart-product-item">0</span> -->
-                                            <button id="increase" class="Carts plus">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="card bg-light mb-2" style="max-width: 100%">
-                            <div class="card-header bg-white">
-                                <div class="form-check d-flex justify-content-between">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <span class="cart-delete-item"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2">
-                                        <div class="cart-product-image">
-                                           <a href="single.html">
-                                                <img src="./assets/images/football/4.jpg" alt="">
-                                           </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="cart-product-name-and-details">
-                                            <a href="single.html">
-                                                <h2>COMPACT TRAVEL TREKKING BACKPACK TRAVEL 10 L BLACK
-                                                </h2>
-                                            </a>
-                                            <p>Brand: Samsung, Color Family: Black</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 text-center">
-                                        <div class="card-product-price">
-                                            <span>৳ 3,999</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="cart-product-increse-decrese text-right">
-                                            <button class="Carts minus" id="decrease">-</button>
-                                            <input type="text" class="cart-product-item" id="number" value="0">
-                                            <!-- <span class="cart-product-item">0</span> -->
-                                            <button id="increase" class="Carts plus">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="card bg-light mb-2" style="max-width: 100%">
-                            <div class="card-header bg-white">
-                                <div class="form-check d-flex justify-content-between">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <span class="cart-delete-item"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2">
-                                        <div class="cart-product-image">
-                                           <a href="single.html">
-                                                <img src="./assets/images/football/1.jpg" alt="">
-                                           </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="cart-product-name-and-details">
-                                            <a href="single.html">
-                                                <h2>COMPACT TRAVEL TREKKING BACKPACK TRAVEL 10 L BLACK
-                                                </h2>
-                                            </a>
-                                            <p>Brand: Samsung, Color Family: Black</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 text-center">
-                                        <div class="card-product-price">
-                                            <span>৳ 3,999</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="cart-product-increse-decrese text-right">
-                                            <button class="Carts minus" id="decrease">-</button>
-                                            <input type="text" class="cart-product-item" id="number" value="0">
-                                            <!-- <span class="cart-product-item">0</span> -->
-                                            <button id="increase" class="Carts plus">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Order Summary and Coupon code -->
-            <div class="col-md-4">
-                <div class="cart-right-order-summery py-5">
-                    <h2>Order Summary</h2>
-
-                    <!-- Subtotal row -->
-                    <div class="cart-subtotal d-flex justify-content-between py-2">
-                        <span>Subtotal (2 items)</span>
-                        <span>৳ 74,997</span>
-                    </div>
-
-                    <!-- Shipping fee -->
-                    <div class="cart-shipping d-flex justify-content-between py-2">
-                        <span>Shipping fee</span>
-                        <span>$299</span>
-                    </div>
-
-                    <!-- Coupon code form -->
-                    <div class="couponWrapper">
-                        <input type="text" class="couponInput" placeholder="Have coupon code?">
-                        <button>Apply</button>
-                    </div>
-
-                    <!-- Total Price -->
-                    <div class="cart-total-price d-flex justify-content-between py-2 mt-4">
-                        <span><b>Total Price</b></span>
-                        <span>$299</span>
-                    </div>
-
-                    <!-- Button -->
-                    <a href="javascript:void(0)"><button class="FreshBtn btn-block">Checkout Now</button></a>
-
-                </div>
-            </div> 
-
-        </div>
+<!-- breadcrumbs  -->
+<section class="product-breadcrumb-section">
+  <div class="container">
+    <div class="breadcumbs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">NBA 500 GS WARRIORS BACKPACK 25L - YELLOW</a></li>
     </div>
+  </div>
 </section>
-<!-- Cart Section -->
+<!-- breadcrumbs  -->
+
+<!-- checkout section -->
+<section class="order-section">
+  <div class="container mt-3">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="main-order-left-side">
+                  <h2>Checkout Information</h2>
+                  <div class="main-order-box">
+                      
+                      <!-- Form -->
+                      <form>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-md-8">
+                                <div class="card w-100">
+                                    <div class="card-header bg-info text-center font-weight-bold">Orderer information</div>
+                                      <div class="card-body">
+                                        <div class="px-4 py-3">
+                                            <form class="">
+                                                <div class="form-row">
+                                                  <div class="col-md-6 mb-3">
+                                                    <label for="validationServer01">First name</label>
+                                                    <input class="form-control is-valid" id="validationServer01" type="text" placeholder="First name" value="Mark" required="" />
+                                                    <div class="valid-feedback">Looks good!</div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-3">
+                                                    <label for="validationServer02">Last name</label>
+                                                    <input class="form-control is-valid" id="validationServer02" type="text" placeholder="Last name" value="Otto" required="" />
+                                                    <div class="valid-feedback">Looks good!</div>
+                                                  </div>
+                                                  
+                                                </div>
+                                                <div class="form-row">
+                                                  <div class="col-md-4 mb-3">
+                                                    <label for="validationServer03">Country</label>
+                                                    <select class="form-control is-invalid" name="" id="" required>
+                                                        <option value="">Albania</option>
+                                                        <option value="">Mexico</option>
+                                                        <option value="">Bahamas</option>
+                                                        <option value="">Russian Federation</option>
+                                                        <option value="">Norway</option>
+                                                        <option value="">Bolivia</option>
+                                                        <option value="">Peru</option>
+                                                        <option value="">Colombia</option>
+                                                        <option value="">Qatar</option>
+                                                        <option value="">Nigeria</option>
+                                                      </select>
+                                                    <div class="invalid-feedback">Please provide a valid country.</div>
+                                                  </div>
+                                                  <div class="col-md-4 mb-3">
+                                                    <label for="validationServer05">City</label>
+                                                    <select class="form-control is-invalid" name="" id="" required>
+                                                        <option value="">New York</option>
+                                                        <option value="">Los Angeles</option>
+                                                        <option value="">Charlotte</option>
+                                                        <option value="">Austin</option>
+                                                        <option value="">Paris</option>
+                                                        <option value="">London</option>
+                                                        <option value="">Zurich</option>
+                                                        <option value="">Brussels</option>
+                                                        <option value="">Oslo</option>
+                                                        <option value="">Madrid</option>
+                                                      </select>
+                  
+                                                    <div class="invalid-feedback">Please enter your city.</div>
+                                                  </div>
+                                                  <div class="col-md-4 mb-3">
+                                                      <label for="validationServer05">Postal code</label>
+                                                      <input class="form-control is-invalid" id="validationServer05" type="number" placeholder="post code" required="" />
+                                                      <div class="invalid-feedback">Please enter your postal code.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                  <div class="col-md-12 mb-3">
+                                                    <label for="validationServer05">Email</label>
+                                                    <input class="form-control is-invalid" id="validationServer05" type="email" placeholder="email" required="" />
+                                                    <div class="invalid-feedback">Please enter your email.</div>
+                                                  </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-12 mb-3">
+                                                      <label for="validationServer01">address</label>
+                                                      <input class="form-control is-invalid" id="validationServer01" type="text" placeholder="Address" value="No.12, Sec. 4, Ren’ai Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)" required="" />
+                                                      <div class="valid-feedback">Looks good!</div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group pl-4">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input is-invalid" id="invalidCheck3" type="checkbox" value="" required="" />
+                                                    <label class="form-check-label" for="invalidCheck3">Agree to terms and conditions</label>
+                                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                                                  </div>
+                                                </div>
+                                                <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#sendModal" data-title="Double Confirm">Send</button>
+                                                <button class="btn btn-secondary" type="submit" data-toggle="modal" data-target="#sendModal" data-title="Double Confirm">
+                                                    Continue to buy</button>
+                                              </form>
+                                        </div>
+                                      </div>
+                                    
+                                    
+                                  </div>
+                            </div>
+                        </div>
+                          <div class="form-group">
+                            <label class="formLabel" for="exampleInputEmail1">Contact Number</label>
+                            <input type="email" class="form-control inputField" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter mobile number">
+                          </div>
+
+                          <div class="form-group">
+                            <label class="formLabel" for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control inputField" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+                          </div>
+
+                          <div class="form-group">
+                            <label class="formLabel" for="exampleInputPassword1">Address</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        </form>
+
+                        <div class="order-content">
+                            <ul>
+                                <li>* Delivery will be made within 7 to 45 days, depending on product and campaign</li>
+                                <li>* Delivery charge (40tk) will be added for orders from Unimart, Meenaclick,Khaas food,Khaleque&amp;sons,Little india,Shwapno,Daily Bazar,Suha,Angelic,Shorong and Bengal Meat Express shops</li>
+                                <li>* Price included VAT for VAT applicable products</li>
+                            </ul>
+                        </div>
+
+                        <div class="form-check mb-1">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">I agree to the Terms &amp; Conditions and Purchasing Policy of bdbabashopping.</label>
+                        </div>
+
+                        <div class="orderBtnWrap">
+                              <a href="" class="orderBackBtnWrap">
+                                  <button class="FreshBtn OrderplaceBtn mr-2 btn-block">
+                                      <img src="assets/images/icons/left-arrow.svg" alt="">
+                                      Go Back 
+                                  </button>                                    
+                              </a>
+                              <a href="payment.html" class="orderNextBtnWrap">
+                                  <button class="FreshBtn OrderplaceBtn ml-2 btn-block">Confirmed Order
+                                      <img src="assets/images/icons/right-arrow (1).svg" alt="">
+                                  </button>
+                              </a>
+                        </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Right sidebar -->
+          <div class="col-md-4">
+              <div class="cart-right-order-summery py-5">
+                  <h2>Order Summary</h2>
+
+                  <!-- Subtotal row -->
+                  <div class="cart-subtotal d-flex justify-content-between py-2">
+                      <span>Subtotal (2 items)</span>
+                      <span>৳ 74,997</span>
+                  </div>
+
+                  <!-- Shipping fee -->
+                  <div class="cart-shipping d-flex justify-content-between py-2">
+                      <span>Shipping fee</span>
+                      <span>$299</span>
+                  </div>
+
+                  <!-- Total Price -->
+                  <div class="cart-total-price d-flex justify-content-between py-2 mt-4">
+                      <span><b>Total Price</b></span>
+                      <span>$299</span>
+                  </div>
+
+                  <!-- Button -->
+                  <a href="payment.html"><input type="submit" value="Confirm Order" class="btn btn-success btn-block OrdercheckoutBtn"></a>
+
+              </div>
+          </div> 
+      </div>
+  </div>
+</section>
+<!-- checkout section -->
+
 
 
 <!-- footer area-->
@@ -922,6 +931,10 @@
     <!-- animate -->
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
+
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery.exzoom.js"></script>
 
     <!-- main js-->
     <script src="assets/js/borhan.js"></script>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ecommerce Home Page</title>
 
     <!-- favicon -->
@@ -21,6 +22,9 @@
 
     <!-- Animate -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.exzoom.css">
 
     <!-- theme css -->
     <link rel="stylesheet" href="assets/css/woomart.css">
@@ -614,7 +618,31 @@
       <!-- Gallery -->
       <div class="product-gallery-wrap">
         <div class="gallery-wrap">
-          <img src="./assets/images/Bag/bag.png" alt="">
+            <div class="exzoom" id="exzoom">
+                <!-- Images -->
+                <div class="exzoom_img_box">
+                  <ul class='exzoom_img_ul'>
+                    <li><img src="./assets/images/new-bag/1.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/2.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/3.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/4.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/5.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/1.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/2.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/3.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/4.jpg"/></li>
+                    <li><img src="./assets/images/new-bag/5.jpg"/></li>
+                    ...
+                  </ul>
+                </div>
+                <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+                <div class="exzoom_nav"></div>
+                <!-- Nav Buttons -->
+                <p class="exzoom_btn">
+                    <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
+                    <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+                </p>
+            </div>         
         </div>
         <div class="gallery-content">
 
@@ -1301,6 +1329,8 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="assets/js/jquery.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- bootstrap popper js -->
     <script src="assets/js/popper.js"></script>
 
@@ -1314,7 +1344,21 @@
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
 
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery.exzoom.js"></script>
+
     <!-- main js-->
     <script src="assets/js/borhan.js"></script>
+    <script type="text/javascript">
+         $(function(){
+
+            $("#exzoom").exzoom({
+            // options here
+                "autoPlay": false,
+            });
+
+        });
+    </script>
 </body>
 </html>

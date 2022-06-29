@@ -513,8 +513,6 @@ nav.cat-menu ul li a i {
 .cart-product-increse-decrese .minus {
   background: rgba(0, 0, 0, 0.14);
   padding: 3px 10px;
-  height: 10px;
-  width: 10px;
   overflow: hidden;
   color: white;
   border-radius: 3px;
@@ -532,8 +530,6 @@ nav.cat-menu ul li a i {
 .cart-product-item {
   background: white;
   padding: 3px 10px;
-  height: 10px;
-  width: 10px;
   overflow: hidden;
   color: white;
   border-radius: 3px;
@@ -541,11 +537,10 @@ nav.cat-menu ul li a i {
 .cart-product-increse-decrese .plus {
   background: rgba(0, 0, 0, 0.14);
   padding: 3px 10px;
-  height: 10px;
-  width: 10px;
   overflow: hidden;
   color: white;
   border-radius: 3px;
+  cursor: pointer;
 }
 .cart-product-increse-decrese .plus:hover,
 .cart-product-increse-decrese .minus:hover {
@@ -3320,7 +3315,7 @@ footer {
   position: absolute;
   left: 0px;
   top: 0px;
-  border-top: 2px solid var(--brandColor);
+  border-top: 1px solid lightgray;
   z-index: 9999999;
   width: 300px;
   height: 420px;
@@ -3333,7 +3328,7 @@ footer {
   padding-top: 10px;
 }
 .hero-left-sidebar li {
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
   border-left: 4px solid transparent;
 }
 .hero-left-sidebar li:hover {
@@ -3363,10 +3358,10 @@ footer {
   top: 20px;
   left: 300px;
   z-index: -1;
-
-  box-shadow: 0px 0px 10px #00000040;
+  /* box-shadow: 0px 0px 10px #00000040; */
+  border-top: 1px solid lightgray;
   padding: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.01s ease-in-out;
   z-index: 0;
   visibility: hidden;
   height: 100%;
@@ -3682,7 +3677,7 @@ footer {
 .header-mega-menu:hover .hero-left-sidebar {
   visibility: visible;
   opacity: 1;
-  top: 85px;
+  top: 86px;
 }
 .cart-with-checkout {
   display: flex;
@@ -3984,8 +3979,28 @@ input[type='number'] {
   width: 100%;
 }
 .gallery-wrap {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 10px;
+  width: 100%;
 }
 .gallery-content {
+}
+.left-gallery-thumb {
+  height: max-content;
+}
+.left-gallery-thumb li img {
+  width: 80px;
+  margin-bottom: 13px;
+  border-radius: 3px;
+  padding: 5px;
+  background: white;
+}
+.gallery-body-thumb {
+
+}
+.gallery-body-thumb img {
+
 }
 .gallery-content h1 {
   font-family: var(--roboto);
@@ -4445,4 +4460,100 @@ td {
   align-items: center;
   height: 70px;
   margin-bottom: 20px;
+}
+
+/* maginify */
+.clear {
+  clear: both;
+}
+.zoom {
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+.zoom::before, .zoom::after {
+  background-clip: content-box;
+  background-color: #fff;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  border-width: 12px 6px;
+  content: '';
+  height: 6px;
+  left: 20px;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  width: 20px;
+}
+.zoom::before {
+  border: 0;
+  height: 20px;
+  margin: 5px 0 0 13px;
+  width: 6px;
+  z-index: 20;
+}
+.zoom__inner {
+  background-color: #000;
+  border: 10px solid #000;
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.zoom__image {
+  display: block;
+  width: 100%;
+}
+.zoom--zoomed::before {
+  display: none;
+}
+.zoom--zoomed .zoom__inner {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.zoom--zoomed .zoom__inner::-webkit-scrollbar {
+  height: 0 !important;
+  width: 0 !important;
+}
+.zoom--zoomed .zoom__image {
+  width: 200%;
+}
+@media (min-width: 768px) {
+  .zoom {
+    float: left;
+    height: 200px;
+    margin: 0 20px 20px 0;
+    padding-top: 0;
+    width: 200px;
+  }
+  .zoom:hover, .zoom:focus {
+    cursor: zoom-in;
+  }
+  .zoom:hover .zoom__image-over, .zoom:focus .zoom__image-over {
+    display: block;
+  }
+  .zoom__image-over {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 398px;
+    left: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 398px;
+  }
+  .zoom__image-over-inner {
+    background-repeat: none;
+    background-size: cover;
+    display: block;
+    height: 800px;
+    width: 800px;
+  }
+  .zoom--zoomed:hover, .zoom--zoomed:focus {
+    cursor: zoom-out;
+  }
 }
