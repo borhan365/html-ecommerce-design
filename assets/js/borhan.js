@@ -103,28 +103,29 @@ signInBtn.addEventListener('click', function () {
 // click to increase & decrease value
 const increaseBtn = document.querySelectorAll('button#increase')
 const decreaseBtn = document.querySelectorAll('button#decrease')
-const valueBox = document.getElementById('number')
+const inputField = document.getElementById('inputNumber')
 
-console.log(increaseBtn)
-
-  // start button for minus 
-  for(i=0; i<decreaseBtn.length; i++){
-      decreaseBtn[i].addEventListener('click', function(){
-        valueBox.value--
-        if(valueBox.value < 0){
-            valueBox.value = 0;
-        }
-    }) 
-  }
  
  // start button for add count 
-    for(i=0; i<increaseBtn.length; i++){
-        increaseBtn[i].addEventListener('click', function(){
-          valueBox.value++
-          increaseBtn[i].classList.add('class-added')
-        })
-    }
+ for(let i=0; i<increaseBtn.length; i++){
+  increaseBtn[i].addEventListener('click', function(e){
+    e.target.parentNode.children[1].value = parseInt(e.target.parentNode.children[1].value) + 1
+  })
+}
 // end button for add count
+
+  // start button for minus 
+  for(let i = 0; decreaseBtn.length; i++) {
+
+    decreaseBtn[i].addEventListener('click', function(e){
+      if(e.target.parentNode.children[1].value <= 1) {
+        e.target.parentNode.children[1].value = 1;
+      } else {
+        e.target.parentNode.children[1].value = parseInt(e.target.parentNode.children[1].value) - 1
+      }
+    })
+  }
+
 
 
 // sidebar toggle card

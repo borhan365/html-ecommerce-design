@@ -621,113 +621,164 @@
                       
                       <!-- Form -->
                       <form>
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-md-8">
-                                <div class="card w-100">
-                                    <div class="card-header bg-info text-center font-weight-bold">Orderer information</div>
-                                      <div class="card-body">
-                                        <div class="px-4 py-3">
-                                            <form class="">
-                                                <div class="form-row">
-                                                  <div class="col-md-6 mb-3">
-                                                    <label for="validationServer01">First name</label>
-                                                    <input class="form-control is-valid" id="validationServer01" type="text" placeholder="First name" value="Mark" required="" />
-                                                    <div class="valid-feedback">Looks good!</div>
-                                                  </div>
-                                                  <div class="col-md-6 mb-3">
-                                                    <label for="validationServer02">Last name</label>
-                                                    <input class="form-control is-valid" id="validationServer02" type="text" placeholder="Last name" value="Otto" required="" />
-                                                    <div class="valid-feedback">Looks good!</div>
-                                                  </div>
-                                                  
-                                                </div>
-                                                <div class="form-row">
-                                                  <div class="col-md-4 mb-3">
-                                                    <label for="validationServer03">Country</label>
-                                                    <select class="form-control is-invalid" name="" id="" required>
-                                                        <option value="">Albania</option>
-                                                        <option value="">Mexico</option>
-                                                        <option value="">Bahamas</option>
-                                                        <option value="">Russian Federation</option>
-                                                        <option value="">Norway</option>
-                                                        <option value="">Bolivia</option>
-                                                        <option value="">Peru</option>
-                                                        <option value="">Colombia</option>
-                                                        <option value="">Qatar</option>
-                                                        <option value="">Nigeria</option>
-                                                      </select>
-                                                    <div class="invalid-feedback">Please provide a valid country.</div>
-                                                  </div>
-                                                  <div class="col-md-4 mb-3">
-                                                    <label for="validationServer05">City</label>
-                                                    <select class="form-control is-invalid" name="" id="" required>
-                                                        <option value="">New York</option>
-                                                        <option value="">Los Angeles</option>
-                                                        <option value="">Charlotte</option>
-                                                        <option value="">Austin</option>
-                                                        <option value="">Paris</option>
-                                                        <option value="">London</option>
-                                                        <option value="">Zurich</option>
-                                                        <option value="">Brussels</option>
-                                                        <option value="">Oslo</option>
-                                                        <option value="">Madrid</option>
-                                                      </select>
-                  
-                                                    <div class="invalid-feedback">Please enter your city.</div>
-                                                  </div>
-                                                  <div class="col-md-4 mb-3">
-                                                      <label for="validationServer05">Postal code</label>
-                                                      <input class="form-control is-invalid" id="validationServer05" type="number" placeholder="post code" required="" />
-                                                      <div class="invalid-feedback">Please enter your postal code.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                  <div class="col-md-12 mb-3">
-                                                    <label for="validationServer05">Email</label>
-                                                    <input class="form-control is-invalid" id="validationServer05" type="email" placeholder="email" required="" />
-                                                    <div class="invalid-feedback">Please enter your email.</div>
-                                                  </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="col-md-12 mb-3">
-                                                      <label for="validationServer01">address</label>
-                                                      <input class="form-control is-invalid" id="validationServer01" type="text" placeholder="Address" value="No.12, Sec. 4, Ren’ai Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)" required="" />
-                                                      <div class="valid-feedback">Looks good!</div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group pl-4">
-                                                  <div class="form-check">
-                                                    <input class="form-check-input is-invalid" id="invalidCheck3" type="checkbox" value="" required="" />
-                                                    <label class="form-check-label" for="invalidCheck3">Agree to terms and conditions</label>
-                                                    <div class="invalid-feedback">You must agree before submitting.</div>
-                                                  </div>
-                                                </div>
-                                                <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#sendModal" data-title="Double Confirm">Send</button>
-                                                <button class="btn btn-secondary" type="submit" data-toggle="modal" data-target="#sendModal" data-title="Double Confirm">
-                                                    Continue to buy</button>
-                                              </form>
-                                        </div>
-                                      </div>
-                                    
-                                    
+                        <div class="col-md-12">
+                            <form class="needs-validation" novalidate>
+                              <div class="row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="firstName">First name</label>
+                                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                  <div class="invalid-feedback">
+                                    Valid first name is required.
                                   </div>
-                            </div>
-                        </div>
-                          <div class="form-group">
-                            <label class="formLabel" for="exampleInputEmail1">Contact Number</label>
-                            <input type="email" class="form-control inputField" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter mobile number">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="lastName">Last name</label>
+                                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                  <div class="invalid-feedback">
+                                    Valid last name is required.
+                                  </div>
+                                </div>
+                              </div>
+                      
+                              <div class="mb-3">
+                                <label for="username">Username</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                  <div class="invalid-feedback" style="width: 100%;">
+                                    Your username is required.
+                                  </div>
+                                </div>
+                              </div>
+                      
+                              <div class="mb-3">
+                                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                  Please enter a valid email address for shipping updates.
+                                </div>
+                              </div>
+                      
+                              <div class="mb-3">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                <div class="invalid-feedback">
+                                  Please enter your shipping address.
+                                </div>
+                              </div>
+                      
+                              <div class="mb-3">
+                                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                              </div>
+                      
+                              <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-group col-md-4 w-100">
+                                        <label for="inputState">Division</label>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>Dhaka</option>
+                                          <option>Chittagong</option>
+                                          <option>Rajshahi</option>
+                                          <option>Khulna</option>
+                                          <option>Barisal</option>
+                                        </select>
+                                      </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-group col-md-4 w-100">
+                                        <label for="inputState">District</label>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>Dhaka</option>
+                                          <option>Chittagong</option>
+                                          <option>Rajshahi</option>
+                                          <option>Khulna</option>
+                                          <option>Barisal</option>
+                                        </select>
+                                      </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-group col-md-4 w-100">
+                                        <label for="inputState">Thana</label>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>Dhaka</option>
+                                          <option>Chittagong</option>
+                                          <option>Rajshahi</option>
+                                          <option>Khulna</option>
+                                          <option>Barisal</option>
+                                        </select>
+                                      </div>
+                                </div>
+                              </div>
+                              <hr class="mb-4 mt-2">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="same-address">
+                                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="save-info">
+                                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                              </div>
+                              <hr class="mb-4 mt-3">
+                      
+                              <h4 class="mb-3">Payment</h4>
+                      
+                              <div class="d-block my-3">
+                                <div class="custom-control custom-radio">
+                                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                  <label class="custom-control-label" for="credit">Credit card</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                  <label class="custom-control-label" for="debit">Debit card</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                  <label class="custom-control-label" for="paypal">PayPal</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="cc-name">Name on card</label>
+                                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                  <small class="text-muted">Full name as displayed on card</small>
+                                  <div class="invalid-feedback">
+                                    Name on card is required
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="cc-number">Credit card number</label>
+                                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                  <div class="invalid-feedback">
+                                    Credit card number is required
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-3 mb-3">
+                                  <label for="cc-expiration">Expiration</label>
+                                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                  <div class="invalid-feedback">
+                                    Expiration date required
+                                  </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                  <label for="cc-cvv">CVV</label>
+                                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                  <div class="invalid-feedback">
+                                    Security code required
+                                  </div>
+                                </div>
+                              </div>
+                              <hr class="mb-2 mt-3">
+                            </form>
                           </div>
-
-                          <div class="form-group">
-                            <label class="formLabel" for="exampleInputEmail1">Email Address</label>
-                            <input type="email" class="form-control inputField" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
-                          </div>
-
-                          <div class="form-group">
-                            <label class="formLabel" for="exampleInputPassword1">Address</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                        </form>
+                          
 
                         <div class="order-content">
                             <ul>
@@ -743,15 +794,8 @@
                         </div>
 
                         <div class="orderBtnWrap">
-                              <a href="" class="orderBackBtnWrap">
-                                  <button class="FreshBtn OrderplaceBtn mr-2 btn-block">
-                                      <img src="assets/images/icons/left-arrow.svg" alt="">
-                                      Go Back 
-                                  </button>                                    
-                              </a>
                               <a href="payment.html" class="orderNextBtnWrap">
-                                  <button class="FreshBtn OrderplaceBtn ml-2 btn-block">Confirmed Order
-                                      <img src="assets/images/icons/right-arrow (1).svg" alt="">
+                                  <button class="FreshBtn OrderplaceBtn">Confirmed Order
                                   </button>
                               </a>
                         </div>

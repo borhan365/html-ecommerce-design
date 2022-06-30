@@ -2706,6 +2706,8 @@ a.submit-btn.btn-outline-primary {
 }
 .OrderplaceBtn {
   justify-content: space-between !important;
+  width: max-content;
+  margin-top: 10px;
 }
 .orderBtnWrap {
   display: flex;
