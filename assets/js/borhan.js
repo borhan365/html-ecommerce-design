@@ -204,21 +204,21 @@ var HeroRightSlider = new Swiper('.hero-right-slider', {
 // toggle right cart sidebar
 
 const cartIcon = document.getElementById('cart')
-const cartElement = document.getElementById('cart-body')
+const cartBody = document.getElementById('cart-body')
 const cartCross = document.getElementById('cart-cross')
 
 cartIcon.addEventListener('click', function() {
-  cartElement.classList.add('active-cart-body')
+  cartBody.classList.add('active-cart-body')
+})
 
-  // cross
-  cartCross.addEventListener('click', function() {
-    cartElement.classList.remove('active-cart-body')
-  })
+// cross
+cartCross.addEventListener('click', function(e) {
+  e.stopPropagation();
+  cartBody.classList.remove('active-cart-body');
 })
 
 
 // Click to top menu here
-
 const topButton = document.querySelector('.ClickTop');
 window.addEventListener('scroll', () => {
   if( window.pageYOffset > 100) {
