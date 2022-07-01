@@ -356,4 +356,66 @@
         font-size: 15px;
         border-radius: unset !important;
     }
+    .checkout-submit button{
+        margin-top: unset;
+        width: 100%;
+        border-radius: 2px;
+    }
+    .checkout-section {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .main-order-left-side {
+        background: white;
+        padding: 15px;
+        margin-bottom: 11px;
+    }
+    .checkout-group input, .checkout-group select {
+        width: 100%;
+        border-radius: 3px;
+        padding: 6px;
+        border: 1px solid lightgrey;
+        font-size: 12px;
+    }
+    .checkout-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 22px;
+    }
+    .checkout-submit {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .promo-code-voucher button {
+        background: #1c1c23;
+        color: white;
+        padding: 7px 20px;
+        border-radius: 3px;
+    }
+    .promo-code-voucher input {
+        width: 100%;
+        padding: 6px;
+        border-radius: 3px;
+        border: 1px solid lightgray;
+    }
+    .promo-code-voucher h2 {
+        font-size: 15px;
+        color: #1c1c23;
+        margin-bottom: 10px;
+    }
+    .save-money-card p {
+        font-size: 13px;
+    }
+    .checkoutBtn{
+        padding: 6px;
+    }
+    .checkout-title, .check-out-delivery-title {
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+    }
+    .check-out-delivery-title h3 {
+        font-size: 17px;
+    }
 }

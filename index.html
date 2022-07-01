@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ecommerce Home Page</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/icons/shopping-bag.svg">
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-
-    <!-- Swiper css -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-
-    <!-- theme css -->
-    <link rel="stylesheet" href="assets/css/borhan.css">
-
-    <!-- responsive css -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ecommerce Home Page</title>
+    
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/icons/shopping-bag.svg">
+    
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+    
+        <!-- Swiper css -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+        <!-- Animate -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+    
+        <!-- fancybox -->
+        <link rel="stylesheet" href="assets/css/jquery.exzoom.css">
+    
+        <!-- theme css -->
+        <link rel="stylesheet" href="assets/css/borhan.css">
+    
+        <!-- responsive css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    </head>
 
 <body>
 
@@ -1587,7 +1591,21 @@
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
 
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery.exzoom.js"></script>
+
     <!-- main js-->
     <script src="assets/js/borhan.js"></script>
+    <script type="text/javascript">
+         $(function(){
+
+            $("#exzoom").exzoom({
+            // options here
+                "autoPlay": false,
+            });
+
+        });
+    </script>
 </body>
 </html>
