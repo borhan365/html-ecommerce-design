@@ -127,7 +127,6 @@ const inputField = document.getElementById('inputNumber')
   }
 
 
-
 // sidebar toggle card
 const categorySidebarTitle = document.querySelectorAll('div#category-sidebar-title')
 
@@ -140,21 +139,25 @@ for (let i = 0; i < categorySidebarTitle.length; i++) {
   })
 }
 
-// click to open mobile menu and close
+// Click to open mobile menu and close
+// ===================================
+
 const mobileMenuCross = document.getElementById('mobile-menu-cross')
-const mobileBarsIcon = document.getElementById('mobile-header-bars')
+const mobileBarsIcon = document.querySelectorAll('i#mobile-header-bars')
 const mobileSidebarMenu = document.getElementById('main-mobile-mega-menu')
 
-mobileBarsIcon.addEventListener('click', function(){
-  mobileSidebarMenu.classList.toggle('active-mega-menu')
-})
-
-mobileMenuCross.addEventListener('click', function(){
-  mobileSidebarMenu.classList.remove('active-mega-menu')
-})
+for (let i = 0; i < mobileBarsIcon.length; i++) {
+  mobileBarsIcon[i].addEventListener('click', function(){
+    mobileSidebarMenu.classList.toggle('active-mega-menu')
+  })
+  mobileMenuCross.addEventListener('click', function(){
+    mobileSidebarMenu.classList.remove('active-mega-menu')
+  })
+}
 
 
 // mobile mega menu
+// parent menu
 const parentMenu = document.querySelectorAll('i#parent-caret')
 for(let i = 0; i < parentMenu.length; i++) {
   parentMenu[i].addEventListener('click', function(){
@@ -163,6 +166,7 @@ for(let i = 0; i < parentMenu.length; i++) {
   })
 }
 
+// mobile mega menu
 // children menu
 const childrenMenu = document.querySelectorAll('i#childen-caret')
 for(let i = 0; i < childrenMenu.length; i++) {

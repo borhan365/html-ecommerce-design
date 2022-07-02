@@ -1,949 +1,1246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecommerce Home Page</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ecommerce Home Page</title>
-    
-        <!-- favicon -->
-        <link rel="shortcut icon" href="assets/images/icons/shopping-bag.svg">
-    
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-    
-        <!-- Swiper css -->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
-        <!-- Animate -->
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-    
-        <!-- fancybox -->
-        <link rel="stylesheet" href="assets/css/jquery.exzoom.css">
-    
-        <!-- theme css -->
-        <link rel="stylesheet" href="assets/css/borhan.css">
-    
-        <!-- responsive css -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    
-    </head>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/shopping-bag.svg" />
 
-<body>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.exzoom.css" />
+
+    <!-- theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css" />
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
     <!-- Mobile Menu section -->
     <section class="mobile-header-section">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="mobile-header-menu-section">
-
-                    <!-- Middle logo -->
-                    <div class="mobile-header-logo">
-                        <a href="index.html"><img src="assets/images/multi-sports.png" class="img-fluid" alt=""></a>
-                    </div>
-
-                    <!-- search -->
-                    <div class="search-form">
-                        <form action="#" method="POST">
-                            <input type="text" placeholder="SEARCH SPROTS PRODUCTS..." name="search">
-                            <a href="" class="search-btn"><i class="fa fa-search"></i></a>
-                        </form>
-                    </div>
-
-                    <!-- bars -->
-                    <div class="header-mobile-bars" id="mobile-fixed-footer-menu-icon">
-                        <i id="mobile-header-bars" class="fas fa-bars"></i>
-                    </div>
-
-                </div>
-                <!-- menu -->
-                <!-- mobile menu -->
-                <div class="mobile-menu-wrap" id="main-mobile-mega-menu">
-                    <div class="mobile-menu-header">
-                        <h3>Choose Category</h3>
-                        <i id="mobile-menu-cross" class="fas fa-times"></i>
-                    </div>
-                    <ul id="parent-ul">
-
-                        <!-- parent li -->
-                        <li class="parent-li">
-                            <div class="mobile-dropdown">
-                                <a href="#"> Busketball</a> 
-                                <i id="parent-caret" class="fas fa-caret-down"></i>
-                            </div>
-
-                            <!-- children -->
-                            <ul>
-                                <li class="children-li">
-                                    <div class="mobile-dropdown">
-                                        <a href="#"> Football</a> 
-                                        <i id="childen-caret" class="fas fa-caret-down"></i>
-                                    </div>
-                                    <!-- child -->
-                                    <ul>
-                                        <li class="children-li">
-                                            <div class="mobile-dropdown">
-                                                <a href="#"> Busketball</a> 
-                                                <i id="childen-caret" class="fas fa-caret-down"></i>
-                                            </div>
-                                       </li>
-                                       <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                                       <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                                    </ul>
-                               </li>
-                               <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                               <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                            </ul>
-                            
-                        </li>
-
-                        <!-- parent li -->
-                        <li class="parent-li">
-                            <div class="mobile-dropdown">
-                                <a href="#"> Busketball</a> 
-                                <i id="parent-caret" class="fas fa-caret-down"></i>
-                            </div>
-
-                            <!-- children -->
-                            <ul>
-                                <li class="children-li">
-                                    <div class="mobile-dropdown">
-                                        <a href="#"> Football</a> 
-                                        <i id="childen-caret" class="fas fa-caret-down"></i>
-                                    </div>
-                                    <!-- child -->
-                                    <ul>
-                                        <li class="children-li">
-                                            <div class="mobile-dropdown">
-                                                <a href="#"> Football</a> 
-                                                <i id="childen-caret" class="fas fa-caret-down"></i>
-                                            </div>
-                                       </li>
-                                       <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                                       <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                                    </ul>
-                               </li>
-                               <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                               <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
-                            </ul>
-                            
-                        </li>
-                        
-                        <li><a href="#"> Batminton</a></li>
-                        <li><a href="#"> Cycling</a></li>
-                        <li><a href="#"> Fitness</a></li>
-                        
-                        <li><a href="#"> Batminton</a></li>
-                        <li><a href="#"> Cycling</a></li>
-                        <li><a href="#"> Fitness</a></li>
-                        
-                        <li><a href="#"> Batminton</a></li>
-                        <li><a href="#"> Cycling</a></li>
-                        <li><a href="#"> Fitness</a></li>
-                        
-                        <li><a href="#"> Batminton</a></li>
-                        <li><a href="#"> Cycling</a></li>
-                        <li><a href="#"> Fitness</a></li>
-                        
-                        <li><a href="#"> Batminton</a></li>
-                        <li><a href="#"> Cycling</a></li>
-                        <li><a href="#"> Fitness</a></li>
-                        
-                        <li><a href="#"> Batminton</a></li>
-                        <li><a href="#"> Cycling</a></li>
-                        <li><a href="#"> Fitness</a></li>
-                        
-                        <li><a href="#"> Batminton</a></li>
-                        <li><a href="#"> Cycling</a></li>
-                        <li><a href="#"> Fitness</a></li>
-                    </ul>
-              </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="mobile-header-menu-section">
+            <!-- Middle logo -->
+            <div class="mobile-header-logo">
+              <a href="index.html"
+                ><img
+                  src="assets/images/multi-sports.png"
+                  class="img-fluid"
+                  alt=""
+              /></a>
             </div>
+
+            <!-- search -->
+            <div class="search-form">
+              <form action="#" method="POST">
+                <input
+                  type="text"
+                  placeholder="SEARCH SPROTS PRODUCTS..."
+                  name="search"
+                />
+                <a href="" class="search-btn"><i class="fa fa-search"></i></a>
+              </form>
+            </div>
+
+            <!-- bars -->
+            <div class="header-mobile-bars" id="mobile-fixed-footer-menu-icon">
+              <i id="mobile-header-bars" class="fas fa-bars"></i>
+            </div>
+          </div>
+          <!-- menu -->
+          <!-- mobile menu -->
+          <div class="mobile-menu-wrap" id="main-mobile-mega-menu">
+            <div class="mobile-menu-header">
+              <h3>Choose Category</h3>
+              <i id="mobile-menu-cross" class="fas fa-times"></i>
+            </div>
+            <ul id="parent-ul">
+              <!-- parent li -->
+              <li class="parent-li">
+                <div class="mobile-dropdown">
+                  <a href="#"> Busketball</a>
+                  <i id="parent-caret" class="fas fa-caret-down"></i>
+                </div>
+
+                <!-- children -->
+                <ul>
+                  <li class="children-li">
+                    <div class="mobile-dropdown">
+                      <a href="#"> Football</a>
+                      <i id="childen-caret" class="fas fa-caret-down"></i>
+                    </div>
+                    <!-- child -->
+                    <ul>
+                      <li class="children-li">
+                        <div class="mobile-dropdown">
+                          <a href="#"> Busketball</a>
+                          <i id="childen-caret" class="fas fa-caret-down"></i>
+                        </div>
+                      </li>
+                      <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                      <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                    </ul>
+                  </li>
+                  <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                  <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                </ul>
+              </li>
+
+              <!-- parent li -->
+              <li class="parent-li">
+                <div class="mobile-dropdown">
+                  <a href="#"> Busketball</a>
+                  <i id="parent-caret" class="fas fa-caret-down"></i>
+                </div>
+
+                <!-- children -->
+                <ul>
+                  <li class="children-li">
+                    <div class="mobile-dropdown">
+                      <a href="#"> Football</a>
+                      <i id="childen-caret" class="fas fa-caret-down"></i>
+                    </div>
+                    <!-- child -->
+                    <ul>
+                      <li class="children-li">
+                        <div class="mobile-dropdown">
+                          <a href="#"> Football</a>
+                          <i id="childen-caret" class="fas fa-caret-down"></i>
+                        </div>
+                      </li>
+                      <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                      <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                    </ul>
+                  </li>
+                  <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                  <li id="child-mobile-menu"><a href="#"> Cycling</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#"> Batminton</a></li>
+              <li><a href="#"> Cycling</a></li>
+              <li><a href="#"> Fitness</a></li>
+
+              <li><a href="#"> Batminton</a></li>
+              <li><a href="#"> Cycling</a></li>
+              <li><a href="#"> Fitness</a></li>
+
+              <li><a href="#"> Batminton</a></li>
+              <li><a href="#"> Cycling</a></li>
+              <li><a href="#"> Fitness</a></li>
+
+              <li><a href="#"> Batminton</a></li>
+              <li><a href="#"> Cycling</a></li>
+              <li><a href="#"> Fitness</a></li>
+
+              <li><a href="#"> Batminton</a></li>
+              <li><a href="#"> Cycling</a></li>
+              <li><a href="#"> Fitness</a></li>
+
+              <li><a href="#"> Batminton</a></li>
+              <li><a href="#"> Cycling</a></li>
+              <li><a href="#"> Fitness</a></li>
+
+              <li><a href="#"> Batminton</a></li>
+              <li><a href="#"> Cycling</a></li>
+              <li><a href="#"> Fitness</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Mobile Menu section -->
 
     <!-- Mobile Footer Fixed menu -->
     <section class="mobileFooter-fixed-navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="main-mobile-footer-menu">
-                        <div class="footerMenuItems footerHome">
-                            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>  <span>Home</span> </a>
-                        </div>
-                        <div class="footerMenuItems footerChat">
-                            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>  <span>Chat</span> </a>
-                        </div>
-                        <div class="footerMenuItems footerCart">
-                            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span> </a>
-                        </div>
-                        <div class="footerMenuItems footerAccount">
-                            <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>  <span>Account</span> </a>
-                        </div>
-                        <div class="footerMenuItems footerAccount" id="mobile-fixed-footer-menu-icon">
-                            <i class="fas fa-bars"></i> <span>Menu</span>
-                        </div>
-
-                        
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-mobile-footer-menu">
+              <div class="footerMenuItems footerHome">
+                <a href="index.html"
+                  ><i class="fa fa-home" aria-hidden="true"></i>
+                  <span>Home</span>
+                </a>
+              </div>
+              <div class="footerMenuItems footerChat">
+                <a href="#"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>Chat</span>
+                </a>
+              </div>
+              <div class="footerMenuItems footerCart">
+                <a href="cart.html"
+                  ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  <span>Cart</span>
+                </a>
+              </div>
+              <div class="footerMenuItems footerAccount">
+                <a href="profile.html"
+                  ><i class="fa fa-user" aria-hidden="true"></i>
+                  <span>Account</span>
+                </a>
+              </div>
+              <div
+                class="footerMenuItems footerAccount"
+                id="mobile-fixed-footer-menu-icon"
+              >
+                <i id="mobile-header-bars" class="fas fa-bars"></i>
+                <span>Menu</span>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Mobile Footer Fixed menu -->
 
-<header>
-    <section class="header-area-section">
+    <header>
+      <section class="header-area-section">
         <!-- Header middle -->
         <div class="header-middle-wrapper">
+          <!-- bars -->
+          <div class="header-mega-menu">
+            <i class="fas fa-bars"></i>
+            <p>All Sports</p>
 
-            <!-- bars -->
-            <div class="header-mega-menu">
-                <i class="fas fa-bars"></i>
-                <p>All Sports</p>
+            <!-- sidebar menu -->
+            <div>
+              <div class="hero-left-sidebar">
+                <ul>
+                  <li class="hover-sidebar-mega-menu">
+                    <a href="category.html"
+                      ><img src="./assets/images/new-icons/sports.png" alt="" />
+                      Sports
+                    </a>
+                    <span
+                      ><i class="fa fa-caret-right" aria-hidden="true"></i
+                    ></span>
 
-                <!-- sidebar menu -->
-                <div>
-                    <div class="hero-left-sidebar">
+                    <div class="main-hover-sidebar-mega-menu-wrapper">
+                      <div class="single-hover-sidebar-menu-columns">
                         <ul>
-                            
-                            <li class="hover-sidebar-mega-menu">
-                                <a href="category.html"><img src="./assets/images/new-icons/sports.png" alt=""> Sports </a>
-                                <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                        
-                                <div class="main-hover-sidebar-mega-menu-wrapper">
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Busketball</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Cricket</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Football</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Batminton</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Cycling</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Fitness</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Running</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Table Tannis</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Trekking</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Walking</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Fitness</a
+                            >
+                          </li>
 
-                                    <div class="single-hover-sidebar-menu-columns">
-                                        <ul>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Busketball</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cricket</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Football</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Batminton</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cycling</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Running</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Table Tannis</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Trekking</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Walking</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
-
-                                            
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cricket</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Football</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Batminton</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cycling</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Running</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Table Tannis</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Trekking</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Walking</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li class="hover-sidebar-mega-menu">
-                                <a href="category.html">Man</a>
-                                    <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                                <!-- dropdown menu -->
-                                <div class="main-hover-sidebar-mega-menu-wrapper">
-
-                                    <div class="single-hover-sidebar-menu-columns">
-                                        <ul>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Busketball</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cricket</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Football</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Batminton</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Cycling</a></li>
-                                            <li><a href="#"> <img src="./assets/images/new-icons/Basketball-01.png" alt=""> Fitness</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li><a href="category.html">Women</a></li>
-                            <li><a href="category.html">Kids</a></li>
-                            <li><a href="category.html">Sports Accesories</a></li>
-                            <li><a href="category.html">Eid Offers</a></li>
-                            <li><a href="category.html"> <img src="./assets/images/new-icons/gift-card.jpg" alt=""> Gift Card</a></li>
-                            <li><a href="category.html"> <img src="./assets/images/new-icons/made-in-bd.png" alt=""> Made In Bangladesh</a></li>
-                            <li><a href="category.html"> <img src="./assets/images/new-icons/eco.png" alt=""> Eco Design Products</a></li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Cricket</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Football</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Batminton</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Cycling</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Fitness</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Running</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Table Tannis</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Trekking</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Walking</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Fitness</a
+                            >
+                          </li>
                         </ul>
+                      </div>
                     </div>
-                </div>
+                  </li>
+                  <li class="hover-sidebar-mega-menu">
+                    <a href="category.html">Man</a>
+                    <span
+                      ><i class="fa fa-caret-right" aria-hidden="true"></i
+                    ></span>
+                    <!-- dropdown menu -->
+                    <div class="main-hover-sidebar-mega-menu-wrapper">
+                      <div class="single-hover-sidebar-menu-columns">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Busketball</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Cricket</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Football</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Batminton</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Cycling</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/new-icons/Basketball-01.png"
+                                alt=""
+                              />
+                              Fitness</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="category.html">Women</a></li>
+                  <li><a href="category.html">Kids</a></li>
+                  <li><a href="category.html">Sports Accesories</a></li>
+                  <li><a href="category.html">Eid Offers</a></li>
+                  <li>
+                    <a href="category.html">
+                      <img
+                        src="./assets/images/new-icons/gift-card.jpg"
+                        alt=""
+                      />
+                      Gift Card</a
+                    >
+                  </li>
+                  <li>
+                    <a href="category.html">
+                      <img
+                        src="./assets/images/new-icons/made-in-bd.png"
+                        alt=""
+                      />
+                      Made In Bangladesh</a
+                    >
+                  </li>
+                  <li>
+                    <a href="category.html">
+                      <img src="./assets/images/new-icons/eco.png" alt="" /> Eco
+                      Design Products</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- logo area -->
+          <div class="logo-area wow animate__animated animate__fadeInDown">
+            <a href="index.html"
+              ><img src="assets/images/multi-sports.png" alt=""
+            /></a>
+          </div>
+
+          <!-- middle search -->
+          <div class="search-form">
+            <form action="#" method="POST">
+              <input
+                type="text"
+                placeholder="SEARCH SPROTS PRODUCTS..."
+                name="search"
+              />
+              <a href="" class="search-btn"><i class="fa fa-search"></i></a>
+            </form>
+          </div>
+
+          <!-- user icons -->
+          <div class="user-icons-wrapper">
+            <!-- sign in -->
+            <div class="icon-box" id="signIn">
+              <div class="icon-thumb">
+                <img src="./assets/images/new-icons/Account-01.png" alt="" />
+              </div>
+              <p>Sign in</p>
             </div>
 
-            <!-- logo area -->
-            <div class="logo-area wow animate__animated animate__fadeInDown">
-                <a href="index.html"><img src="assets/images/multi-sports.png" alt=""></a>
+            <!-- sign in -->
+            <div class="icon-box">
+              <div class="icon-thumb">
+                <img src="./assets/images/new-icons/Store-01.png" alt="" />
+              </div>
+              <p>My Store</p>
             </div>
 
-            <!-- middle search -->
-            <div class="search-form">
-                <form action="#" method="POST">
-                    <input type="text" placeholder="SEARCH SPROTS PRODUCTS..." name="search">
-                    <a href="" class="search-btn"><i class="fa fa-search"></i></a>
-                </form>
+            <!-- sign in -->
+            <div class="icon-box">
+              <div class="icon-thumb">
+                <img src="./assets/images/new-icons/Support-01.png" alt="" />
+              </div>
+              <p>Support</p>
+            </div>
+          </div>
+
+          <!-- cart -->
+          <div class="header-cart" id="cart">
+            <!-- Right cart sidebar fixed -->
+            <section class="cart-sidebar-section">
+              <div class="main-cart-fixed-sidebar" id="cart-body">
+                <!-- My cart and Cross icon -->
+                <div class="cartTopHeader" id="cart-cross">
+                  <i class="fa fa-times"></i>
+                  <h5>Price</h5>
+                </div>
+
+                <!-- All Products list -->
+                <div class="main-all-product-in-cart">
+                  <!-- Single products -->
+                  <div class="single-product-cart">
+                    <div class="inCart-image">
+                      <img src="assets/images/fruits/banner1.png" alt="" />
+                    </div>
+
+                    <!-- middle content -->
+                    <div class="inCart-middle-content">
+                      <h2>Nylon Regular Backpack - Red and Black</h2>
+                      <div class="qty-with-price">
+                        <p>Qty: <input value="1" type="number" /></p>
+                        <p class="cart-product-price">Price: $350</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Single products -->
+                  <div class="single-product-cart">
+                    <div class="inCart-image">
+                      <img src="assets/images/fruits/banner1.png" alt="" />
+                    </div>
+
+                    <!-- middle content -->
+                    <div class="inCart-middle-content">
+                      <h2>Nylon Regular Backpack - Red and Black</h2>
+                      <div class="qty-with-price">
+                        <p>Qty: <input value="1" type="number" /></p>
+                        <p class="cart-product-price">Price: $350</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Single products -->
+                  <div class="single-product-cart">
+                    <div class="inCart-image">
+                      <img src="assets/images/fruits/banner1.png" alt="" />
+                    </div>
+
+                    <!-- middle content -->
+                    <div class="inCart-middle-content">
+                      <h2>Nylon Regular Backpack - Red and Black</h2>
+                      <div class="qty-with-price">
+                        <p>Qty: <input value="1" type="number" /></p>
+                        <p class="cart-product-price">Price: $350</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer section -->
+                <div class="inCart-footer">
+                  <!-- Subtotal -->
+                  <div class="inCart-subtotal FLEX">
+                    <p>Sub Total :</p>
+                    <p>৳ 530</p>
+                  </div>
+
+                  <!-- Shipping express -->
+                  <div class="inCart-shippingAddress FLEX">
+                    <p>Shipping (Express) :</p>
+                    <p>৳ 50</p>
+                  </div>
+
+                  <!-- total  -->
+                  <div class="inCart-total FLEX">
+                    <p>Total Shopping :</p>
+                    <p>৳ 630</p>
+                  </div>
+
+                  <!-- cart or checkout btn -->
+                  <div class="cart-with-checkout">
+                    <a href="cart.html">
+                      <button class="checkoutBtn">View cart</button>
+                    </a>
+
+                    <a href="checkout.html">
+                      <button class="checkoutBtn checkout-btn">Checkout</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Right cart sidebar fixed -->
+
+            <!-- icon -->
+            <div class="header-cart-icon">
+              <img src="./assets/images/new-icons/Cart-01.png" alt="" />
             </div>
 
-            <!-- user icons -->
-            <div class="user-icons-wrapper">
-
-                <!-- sign in -->
-                <div class="icon-box" id="signIn">
-                    <div class="icon-thumb">
-                        <img src="./assets/images/new-icons/Account-01.png" alt="">
-                    </div>
-                    <p>Sign in</p>
-                </div>
-
-                <!-- sign in -->
-                <div class="icon-box">
-                    <div class="icon-thumb">
-                        <img src="./assets/images/new-icons/Store-01.png" alt="">
-                    </div>
-                    <p>My Store</p>
-                </div>
-
-                <!-- sign in -->
-                <div class="icon-box">
-                    <div class="icon-thumb">
-                        <img src="./assets/images/new-icons/Support-01.png" alt="">
-                    </div>
-                    <p>Support</p>
-                </div>
+            <!-- content -->
+            <div class="header-cart-content">
+              <p>My Cart</p>
+              <p>0 item</p>
             </div>
-            
-            <!-- cart -->
-            <div class="header-cart" id="cart">
-
-                <!-- Right cart sidebar fixed -->
-                <section class="cart-sidebar-section">
-                    <div class="main-cart-fixed-sidebar" id="cart-body">
-                        
-                        <!-- My cart and Cross icon -->
-                        <div class="cartTopHeader" id="cart-cross">
-                            <i class="fa fa-times"></i>
-                            <h5>Price</h5>
-                        </div>
-
-                        <!-- All Products list -->
-                        <div class="main-all-product-in-cart">
-
-                            <!-- Single products -->
-                            <div class="single-product-cart">
-                                <div class="inCart-image">
-                                    <img src="assets/images/fruits/banner1.png" alt="">
-                                </div>
-
-                                <!-- middle content -->
-                                <div class="inCart-middle-content">
-                                    <h2>Nylon Regular Backpack - Red and Black</h2>
-                                    <div class="qty-with-price">
-                                        <p>
-                                        Qty: <input value="1" type="number">
-                                        </p>
-                                        <p class="cart-product-price">Price: $350</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single products -->
-                            <div class="single-product-cart">
-                                <div class="inCart-image">
-                                    <img src="assets/images/fruits/banner1.png" alt="">
-                                </div>
-
-                                <!-- middle content -->
-                                <div class="inCart-middle-content">
-                                    <h2>Nylon Regular Backpack - Red and Black</h2>
-                                    <div class="qty-with-price">
-                                        <p>
-                                        Qty: <input value="1" type="number">
-                                        </p>
-                                        <p class="cart-product-price">Price: $350</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single products -->
-                            <div class="single-product-cart">
-                                <div class="inCart-image">
-                                    <img src="assets/images/fruits/banner1.png" alt="">
-                                </div>
-
-                                <!-- middle content -->
-                                <div class="inCart-middle-content">
-                                    <h2>Nylon Regular Backpack - Red and Black</h2>
-                                    <div class="qty-with-price">
-                                        <p>
-                                        Qty: <input value="1" type="number">
-                                        </p>
-                                        <p class="cart-product-price">Price: $350</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Footer section -->
-                        <div class="inCart-footer">
-
-                            <!-- Subtotal -->
-                            <div class="inCart-subtotal FLEX">
-                                <p>Sub Total : </p>
-                                <p> ৳ 530</p>
-                            </div>
-
-                            <!-- Shipping express -->
-                            <div class="inCart-shippingAddress FLEX">
-                                <p>Shipping (Express) : </p>
-                                <p> ৳ 50</p>
-                            </div>
-
-                            <!-- total  -->
-                            <div class="inCart-total FLEX">
-                                <p>Total Shopping :</p>
-                                <p> ৳ 630</p>
-                            </div>
-
-                            <!-- cart or checkout btn -->
-                            <div class="cart-with-checkout">
-                                <a href="cart.html">
-                                    <button class="checkoutBtn">View cart</button>
-                                </a>
-                                
-                                <a href="checkout.html">
-                                    <button class="checkoutBtn checkout-btn">Checkout</button>
-                                </a>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </section>
-                <!-- Right cart sidebar fixed -->
-
-                <!-- icon -->
-                <div class="header-cart-icon">
-                    <img src="./assets/images/new-icons/Cart-01.png" alt="">
-                </div>
-
-                <!-- content -->
-                <div class="header-cart-content">
-                    <p>My Cart</p>
-                    <p>0 item</p>
-                </div>
-
-
-            </div>
+          </div>
         </div>
 
         <!-- login / Register -->
         <div class="main-login-wrapper">
-            
-            <!-- login -->
-            <form action="" id="login">
-                <div>
-                    <div class="auth-header">
-                        <h2><i class="fas fa-sign-in-alt"></i> Login In</h2>
-                        <i id="login-cross" class="fas fa-times"></i>
-                    </div>
-                    <div class="form-content">
-                        <div class="login-box">
-                            <div class="form-grouped">
-                                <label for="">Email</label>
-                            <input type="text" placeholder="Email address / Username">
-                            </div>
-                            <div class="form-grouped">
-                                <label for="">Password</label>
-                            <input type="text" placeholder="Password">
-                            </div>
-                            <br>
-                            <div class="login-group">
-                                <button class="login-submit">Login</button>
-                                <a href="#">Forget Your Password?</a>
-                            </div>
-                            
-                            <span class="donthaveaccount">Don't have any accounts? <a id="register-btn" class="text-decoration-none" href="javascript:void(0)">Register here</a></span>
-                        </div>
-                        <div class="Auth-login">
-                            <a href="#"><button class="loginBtnGoogle "><img src="./assets/images/new-icons/g-logo.png" alt=""> &nbsp; login with google account </button></a>
-                            <a href="#"><button class="loginBtnFb"><img src="./assets/images/new-icons/facebook.png" alt=""> &nbsp; login with facebook account </button></a>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-            <!-- Register -->
-            <form action="" id="register">
-                <div>
-                    <div class="auth-header">
-                        <h2><i class="fas fa-sign-in-alt"></i> Sign Up</h2>
-                        <i id="register-cross" class="fas fa-times"></i>
-                    </div>
-                    <div class="form-content register-form-content">
-                        <div class="login-box">
-    
-                            <!-- first name -->
-                            <div class="form-grouped">
-                                <label for="">First name</label>
-                                <input type="text" placeholder="First name">
-                            </div>
-    
-                            <!-- last name -->
-                            <div class="form-grouped">
-                                <label for="">Last name</label>
-                                <input type="text" placeholder="Last name">
-                            </div>
-    
-                            <!-- email -->
-                            <div class="form-grouped">
-                                <label for="">Email</label>
-                                <input type="email" placeholder="Email address">
-                            </div>
-    
-                            <!-- password -->
-                            <div class="form-grouped">
-                                <label for="">Password</label>
-                                <input type="password" placeholder="Password">
-                            </div>
-    
-                            <!-- password -->
-                            <div class="form-grouped">
-                                <label for="">Confirm Password</label>
-                                <input type="password" placeholder="Confirm password">
-                            </div>
-                            <div class="login-group">
-                                <button type="submit" class="login-submit">Register</button>
-                            </div>
-                            
-                            <span class="donthaveaccount">Already have an accounts? <a id="login-btn" class="text-decoration-none" href="javascript:void(0)">Login here</a></span>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-
-        
-
-    </section>
-</header>
-
-<!-- breadcrumbs  -->
-<section class="product-breadcrumb-section">
-  <div class="container">
-    <div class="breadcumbs">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">NBA 500 GS WARRIORS BACKPACK 25L - YELLOW</a></li>
-    </div>
-  </div>
-</section>
-<!-- breadcrumbs  -->
-
-<!-- checkout section -->
-<section class="checkout-section">
-  <div class="container mt-3">
-      <div class="row">
-          <div class="col-md-8">
-              <!-- body -->
-              <div class="main-order-left-side">
-                  
-                    <!-- title -->
-                    <div class="checkout-title">
-                        <h2>Checkout Information</h2>
-                    </div>
-
-                    <form action="">
-
-                        <div class="check-out-delivery-title">
-                            <h3>Delivery Address</h3>
-                        </div>
-                        
-                        <!-- email | country -->
-                        <div class="checkout-row">
-                            <!-- email -->
-                            <div class="checkout-group">
-                                <label for="">Email <span class="checkout-require-badge">*</span></label>
-                                <input type="email" placeholder="Email address">
-                            </div>
-
-                            <!-- email -->
-                            <div class="checkout-group">
-                                <label for="">Country <span class="checkout-require-badge">*</span></label>
-                                <select name="" id="">
-                                    <option value="bangladesh">Bangladesh</option>
-                                    <option value="bangladesh">India</option>
-                                    <option value="bangladesh">Pakistan</option>
-                                    <option value="bangladesh">China</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <!-- first name | last name -->
-                        <div class="checkout-row">
-                            <!-- first name -->
-                            <div class="checkout-group">
-                                <label for="">First name <span class="checkout-require-badge">*</span></label>
-                                <input type="name" placeholder="First name">
-                            </div>
-
-                            <!-- last name -->
-                            <div class="checkout-group">
-                                <label for="">Last name <span class="checkout-require-badge">*</span></label>
-                                <input type="name" placeholder="Last name">
-                            </div>
-                        </div>
-                        
-                        <!-- address one | address two -->
-                        <div class="checkout-row">
-                            <!-- first name -->
-                            <div class="checkout-group">
-                                <label for="">Address line one <span class="checkout-require-badge">*</span></label>
-                                <input type="name" placeholder="Address line one">
-                            </div>
-
-                            <!-- last name -->
-                            <div class="checkout-group">
-                                <label for="">Address line two <span class="checkout-require-badge">*</span></label>
-                                <input type="name" placeholder="Address line two">
-                            </div>
-                        </div>
-                        
-                        <!-- city | area -->
-                        <div class="checkout-row">
-                            <!-- city -->
-                            <div class="checkout-group">
-                                <label for="">City <span class="checkout-require-badge">*</span></label>
-                                <select name="" id="">
-                                    <option value="bangladesh">Dhaka</option>
-                                    <option value="bangladesh">Chittagong</option>
-                                    <option value="bangladesh">Rajshahi</option>
-                                    <option value="bangladesh">Syleth</option>
-                                </select>
-                            </div>
-
-                            <!-- area -->
-                            <div class="checkout-group">
-                                <label for="">Area <span class="checkout-require-badge">*</span></label>
-                                <select name="" id="">
-                                    <option value="bangladesh">Mirsarai</option>
-                                    <option value="bangladesh">Ukhiya</option>
-                                    <option value="bangladesh">Satkaniya</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <!-- post code | phone number -->
-                        <div class="checkout-row">
-                            <!-- post code -->
-                            <div class="checkout-group">
-                                <label for="">Post code <span class="checkout-require-badge">*</span></label>
-                                <input type="number" placeholder="Postal code">
-                            </div>
-
-                            <!-- last name -->
-                            <div class="checkout-group">
-                                <label for="">Phone number <span class="checkout-require-badge">*</span></label>
-                                <input type="number" placeholder="Phone number">
-                            </div>
-                        </div>
-
-                        <!-- button -->
-                        <div class="checkout-group checkout-submit">
-                            <button>Deliver to this address</button>
-                        </div>
-                    </form>
+          <!-- login -->
+          <form action="" id="login">
+            <div>
+              <div class="auth-header">
+                <h2><i class="fas fa-sign-in-alt"></i> Login In</h2>
+                <i id="login-cross" class="fas fa-times"></i>
               </div>
+              <div class="form-content">
+                <div class="login-box">
+                  <div class="form-grouped">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Email address / Username" />
+                  </div>
+                  <div class="form-grouped">
+                    <label for="">Password</label>
+                    <input type="text" placeholder="Password" />
+                  </div>
+                  <br />
+                  <div class="login-group">
+                    <button class="login-submit">Login</button>
+                    <a href="#">Forget Your Password?</a>
+                  </div>
+
+                  <span class="donthaveaccount"
+                    >Don't have any accounts?
+                    <a
+                      id="register-btn"
+                      class="text-decoration-none"
+                      href="javascript:void(0)"
+                      >Register here</a
+                    ></span
+                  >
+                </div>
+                <div class="Auth-login">
+                  <a href="#"
+                    ><button class="loginBtnGoogle">
+                      <img src="./assets/images/new-icons/g-logo.png" alt="" />
+                      &nbsp; login with google account
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button class="loginBtnFb">
+                      <img
+                        src="./assets/images/new-icons/facebook.png"
+                        alt=""
+                      />
+                      &nbsp; login with facebook account
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- Register -->
+          <form action="" id="register">
+            <div>
+              <div class="auth-header">
+                <h2><i class="fas fa-sign-in-alt"></i> Sign Up</h2>
+                <i id="register-cross" class="fas fa-times"></i>
+              </div>
+              <div class="form-content register-form-content">
+                <div class="login-box">
+                  <!-- first name -->
+                  <div class="form-grouped">
+                    <label for="">First name</label>
+                    <input type="text" placeholder="First name" />
+                  </div>
+
+                  <!-- last name -->
+                  <div class="form-grouped">
+                    <label for="">Last name</label>
+                    <input type="text" placeholder="Last name" />
+                  </div>
+
+                  <!-- email -->
+                  <div class="form-grouped">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Email address" />
+                  </div>
+
+                  <!-- password -->
+                  <div class="form-grouped">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Password" />
+                  </div>
+
+                  <!-- password -->
+                  <div class="form-grouped">
+                    <label for="">Confirm Password</label>
+                    <input type="password" placeholder="Confirm password" />
+                  </div>
+                  <div class="login-group">
+                    <button type="submit" class="login-submit">Register</button>
+                  </div>
+
+                  <span class="donthaveaccount"
+                    >Already have an accounts?
+                    <a
+                      id="login-btn"
+                      class="text-decoration-none"
+                      href="javascript:void(0)"
+                      >Login here</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </header>
+
+    <!-- breadcrumbs  -->
+    <section class="product-breadcrumb-section">
+      <div class="container">
+        <div class="breadcumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">NBA 500 GS WARRIORS BACKPACK 25L - YELLOW</a></li>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumbs  -->
+
+    <!-- checkout section -->
+    <section class="checkout-section">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-8">
+            <!-- body -->
+            <div class="main-order-left-side">
+              <!-- title -->
+              <div class="checkout-title">
+                <h2>Checkout Information</h2>
+              </div>
+
+              <form action="">
+                <div class="check-out-delivery-title">
+                  <h3>Delivery Address</h3>
+                </div>
+
+                <!-- email | country -->
+                <div class="checkout-row">
+                  <!-- email -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Email
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <input type="email" placeholder="Email address" />
+                  </div>
+
+                  <!-- email -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Country
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <select name="" id="">
+                      <option value="bangladesh">Bangladesh</option>
+                      <option value="bangladesh">India</option>
+                      <option value="bangladesh">Pakistan</option>
+                      <option value="bangladesh">China</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- first name | last name -->
+                <div class="checkout-row">
+                  <!-- first name -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >First name
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <input type="name" placeholder="First name" />
+                  </div>
+
+                  <!-- last name -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Last name
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <input type="name" placeholder="Last name" />
+                  </div>
+                </div>
+
+                <!-- address one | address two -->
+                <div class="checkout-row">
+                  <!-- first name -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Address line one
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <input type="name" placeholder="Address line one" />
+                  </div>
+
+                  <!-- last name -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Address line two
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <input type="name" placeholder="Address line two" />
+                  </div>
+                </div>
+
+                <!-- city | area -->
+                <div class="checkout-row">
+                  <!-- city -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >City <span class="checkout-require-badge">*</span></label
+                    >
+                    <select name="" id="">
+                      <option value="bangladesh">Dhaka</option>
+                      <option value="bangladesh">Chittagong</option>
+                      <option value="bangladesh">Rajshahi</option>
+                      <option value="bangladesh">Syleth</option>
+                    </select>
+                  </div>
+
+                  <!-- area -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Area <span class="checkout-require-badge">*</span></label
+                    >
+                    <select name="" id="">
+                      <option value="bangladesh">Mirsarai</option>
+                      <option value="bangladesh">Ukhiya</option>
+                      <option value="bangladesh">Satkaniya</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- post code | phone number -->
+                <div class="checkout-row">
+                  <!-- post code -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Post code
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <input type="number" placeholder="Postal code" />
+                  </div>
+
+                  <!-- last name -->
+                  <div class="checkout-group">
+                    <label for=""
+                      >Phone number
+                      <span class="checkout-require-badge">*</span></label
+                    >
+                    <input type="number" placeholder="Phone number" />
+                  </div>
+                </div>
+
+                <!-- button -->
+                <div class="checkout-group checkout-submit">
+                  <button>Deliver to this address</button>
+                </div>
+              </form>
+            </div>
           </div>
 
           <!-- Right sidebar -->
           <div class="col-md-4">
             <!-- cart card -->
-            <div class="main-cart-fixed-sidebar active-cart-body main-cart-fixed-checkout-page">
-            
-                <!-- My cart and Cross icon -->
-                <div class="checkout-title checkout-card-title">
-                    <h2>Your Cart 2 Items</h2>
-                </div>
-    
-                <!-- All Products list -->
-                <div class="main-all-product-in-cart">
-    
-                    <!-- Single products -->
-                    <div class="single-product-cart">
-                        <div class="inCart-image">
-                            <img src="assets/images/new-bag/10.png" alt="">
-                        </div>
-    
-                        <!-- middle content -->
-                        <div class="inCart-middle-content">
-                            <h2>Nylon Regular Backpack - Red and Black</h2>
-                            <div class="qty-with-price">
-                                <div class="qty-price-wrap">
-                                    <p>
-                                        Qty: <input value="1" type="number">
-                                     </p>
-                                     <p class="cart-product-price">Price: $350</p>
-                                </div>
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Single products -->
-                    <div class="single-product-cart">
-                        <div class="inCart-image">
-                            <img src="assets/images/new-bag/2.jpg" alt="">
-                        </div>
-    
-                        <!-- middle content -->
-                        <div class="inCart-middle-content">
-                            <h2>Nylon Regular Backpack - Red and Black</h2>
-                            <div class="qty-with-price">
-                                <div class="qty-price-wrap">
-                                    <p>
-                                        Qty: <input value="1" type="number">
-                                     </p>
-                                     <p class="cart-product-price">Price: $350</p>
-                                </div>
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Single products -->
-                    <div class="single-product-cart">
-                        <div class="inCart-image">
-                            <img src="assets/images/new-bag/5.jpg" alt="">
-                        </div>
-    
-                        <!-- middle content -->
-                        <div class="inCart-middle-content">
-                            <h2>Nylon Regular Backpack - Red and Black</h2>
-                            <div class="qty-with-price">
-                                <div class="qty-price-wrap">
-                                    <p>
-                                        Qty: <input value="1" type="number">
-                                     </p>
-                                     <p class="cart-product-price">Price: $350</p>
-                                </div>
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Footer section -->
-                <div class="inCart-footer">
-    
-                    <!-- Subtotal -->
-                    <div class="inCart-subtotal checkout-subtotal FLEX">
-                        <p>Sub Total : </p>
-                        <p> ৳ 530</p>
-                    </div>
-    
-                    <!-- Shipping express -->
-                    <div class="inCart-shippingAddress checkout-vat FLEX">
-                        <p>VAT / TEX : </p>
-                        <p> ৳ 50</p>
-                    </div>
-    
-                    <!-- delivery charge -->
-                    <div class="inCart-subtotal checkout-charge FLEX">
-                        <p>Delivery Charge : </p>
-                        <p> ৳ 530</p>
-                    </div>
-    
-                    <!-- total  -->
-                    <div class="inCart-total check-out-total FLEX">
-                        <p>Total :</p>
-                        <p> ৳ 630</p>
-                    </div>
+            <div
+              class="main-cart-fixed-sidebar active-cart-body main-cart-fixed-checkout-page"
+            >
+              <!-- My cart and Cross icon -->
+              <div class="checkout-title checkout-card-title">
+                <h2>Your Cart 2 Items</h2>
+              </div>
 
-                    <!-- save money -->
-                    <div class="save-money-card">
-                        <p>Your Savings On This Order ৳0</p>
+              <!-- All Products list -->
+              <div class="main-all-product-in-cart">
+                <!-- Single products -->
+                <div class="single-product-cart">
+                  <div class="inCart-image">
+                    <img src="assets/images/new-bag/10.png" alt="" />
+                  </div>
+
+                  <!-- middle content -->
+                  <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <div class="qty-with-price">
+                      <div class="qty-price-wrap">
+                        <p>Qty: <input value="1" type="number" /></p>
+                        <p class="cart-product-price">Price: $350</p>
+                      </div>
+                      <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
-    
-                    <!-- cart or checkout btn -->
-                    <div class="cart-with-checkout">
-                        
-                        <a href="checkout.html">
-                            <button class="checkoutBtn checkout-btn">Confirm Order</button>
-                        </a>
-                    </div>
-    
+                  </div>
                 </div>
 
-                
-                
+                <!-- Single products -->
+                <div class="single-product-cart">
+                  <div class="inCart-image">
+                    <img src="assets/images/new-bag/2.jpg" alt="" />
+                  </div>
+
+                  <!-- middle content -->
+                  <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <div class="qty-with-price">
+                      <div class="qty-price-wrap">
+                        <p>Qty: <input value="1" type="number" /></p>
+                        <p class="cart-product-price">Price: $350</p>
+                      </div>
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single products -->
+                <div class="single-product-cart">
+                  <div class="inCart-image">
+                    <img src="assets/images/new-bag/5.jpg" alt="" />
+                  </div>
+
+                  <!-- middle content -->
+                  <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <div class="qty-with-price">
+                      <div class="qty-price-wrap">
+                        <p>Qty: <input value="1" type="number" /></p>
+                        <p class="cart-product-price">Price: $350</p>
+                      </div>
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer section -->
+              <div class="inCart-footer">
+                <!-- Subtotal -->
+                <div class="inCart-subtotal checkout-subtotal FLEX">
+                  <p>Sub Total :</p>
+                  <p>৳ 530</p>
+                </div>
+
+                <!-- Shipping express -->
+                <div class="inCart-shippingAddress checkout-vat FLEX">
+                  <p>VAT / TEX :</p>
+                  <p>৳ 50</p>
+                </div>
+
+                <!-- delivery charge -->
+                <div class="inCart-subtotal checkout-charge FLEX">
+                  <p>Delivery Charge :</p>
+                  <p>৳ 530</p>
+                </div>
+
+                <!-- total  -->
+                <div class="inCart-total check-out-total FLEX">
+                  <p>Total :</p>
+                  <p>৳ 630</p>
+                </div>
+
+                <!-- save money -->
+                <div class="save-money-card">
+                  <p>Your Savings On This Order ৳0</p>
+                </div>
+
+                <!-- cart or checkout btn -->
+                <div class="cart-with-checkout">
+                  <a href="checkout.html">
+                    <button class="checkoutBtn checkout-btn">
+                      Confirm Order
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
             <!-- promo code or voucher -->
             <div class="sidebar-card">
-                <div class="promo-code-voucher">
-                    <h2><i class="fa fa-gift" aria-hidden="true"></i>
-                        Have a Promo Code or Voucher?</h2>
-                    <div class="promo-input-wrap">
-                        <input type="text" class="couponInput" placeholder="Have coupon code?">
-                    <button>Apply</button>
-                    </div>
+              <div class="promo-code-voucher">
+                <h2>
+                  <i class="fa fa-gift" aria-hidden="true"></i> Have a Promo
+                  Code or Voucher?
+                </h2>
+                <div class="promo-input-wrap">
+                  <input
+                    type="text"
+                    class="couponInput"
+                    placeholder="Have coupon code?"
+                  />
+                  <button>Apply</button>
                 </div>
+              </div>
             </div>
 
             <!-- checkbox -->
             <div class="sidebar-card">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Send as gift
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Send as donation/zakat
-                    </label>
-                  </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Send as gift
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Send as donation/zakat
+                </label>
+              </div>
             </div>
-          </div> 
+          </div>
+        </div>
       </div>
-  </div>
-</section>
-<!-- checkout section -->
+    </section>
+    <!-- checkout section -->
 
+    <!-- footer area-->
+    <footer class="footer-area">
+      <div class="ClickTop">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </div>
 
-
-<!-- footer area-->
-<footer class="footer-area">
-
-    <div class="ClickTop">
-      <i class="fa fa-chevron-up" aria-hidden="true"></i>
-    </div>
-
-    <!-- start of footer middle-->
-    <div class="footer-middle">
+      <!-- start of footer middle-->
+      <div class="footer-middle">
         <div class="container">
-            <div class="footer-wrapper">
-
-                <!-- logo area -->
-                <div class="footer-logo-area">
-
-                    <!-- logo -->
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img src="./assets/images/multi-sports.png" alt="">
-                        </a>
-                    </div>
-                    <p>MULTI SPORTS is a leader in sports goods in Bangladesh having a very strong image and reputation in the industry.</p>
-                    <div class="footer-social-media">
-                        <ul>
-                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- menu one -->
-                <div class="footer-menu-item">
-                    <h4 class="footer-title">Contact Us</h4>
-                    <ul>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Order History</a>
-                        </li>
-                        <li>
-                            <a href="#">Returns</a>
-                        </li>
-                        <li>
-                            <a href="#">Custom Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms & Condition</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- menu two -->
-                <div class="footer-menu-item">
-                    <h4 class="footer-title">Information</h4>
-                    <ul>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Order History</a>
-                        </li>
-                        <li>
-                            <a href="#">Returns</a>
-                        </li>
-                        <li>
-                            <a href="#">Custom Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms & Condition</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- menu three -->
-                <div class="footer-menu-item">
-                    <h4 class="footer-title">Customer Service</h4>
-                    <ul>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Order History</a>
-                        </li>
-                        <li>
-                            <a href="#">Returns</a>
-                        </li>
-                        <li>
-                            <a href="#">Custom Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms & Condition</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="footer-wrapper">
+            <!-- logo area -->
+            <div class="footer-logo-area">
+              <!-- logo -->
+              <div class="footer-logo">
+                <a href="index.html">
+                  <img src="./assets/images/multi-sports.png" alt="" />
+                </a>
+              </div>
+              <p>
+                MULTI SPORTS is a leader in sports goods in Bangladesh having a
+                very strong image and reputation in the industry.
+              </p>
+              <div class="footer-social-media">
+                <ul>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+
+            <!-- menu one -->
+            <div class="footer-menu-item">
+              <h4 class="footer-title">Contact Us</h4>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Order History</a>
+                </li>
+                <li>
+                  <a href="#">Returns</a>
+                </li>
+                <li>
+                  <a href="#">Custom Service</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Condition</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- menu two -->
+            <div class="footer-menu-item">
+              <h4 class="footer-title">Information</h4>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Order History</a>
+                </li>
+                <li>
+                  <a href="#">Returns</a>
+                </li>
+                <li>
+                  <a href="#">Custom Service</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Condition</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- menu three -->
+            <div class="footer-menu-item">
+              <h4 class="footer-title">Customer Service</h4>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Order History</a>
+                </li>
+                <li>
+                  <a href="#">Returns</a>
+                </li>
+                <li>
+                  <a href="#">Custom Service</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Condition</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-
-    <div class="footer-bottom">
+      <div class="footer-bottom">
         <div class="container">
-            <div class="bordr-bottom"></div>
-            <div class="footer-content d-flex">
-                <div class="footer-left">
-                    <p>
-                        © 2022 SHAH SPORTS. All Rights Reserved.
-                    </p>
-                </div>
-                <div class="footer-payment">
-                    <img src="./assets/images/payment-methods-1000x47-1.png" alt="">
-                </div>
-                
+          <div class="bordr-bottom"></div>
+          <div class="footer-content d-flex">
+            <div class="footer-left">
+              <p>© 2022 SHAH SPORTS. All Rights Reserved.</p>
             </div>
+            <div class="footer-payment">
+              <img src="./assets/images/payment-methods-1000x47-1.png" alt="" />
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
-<!-- footer area -->
-
+      </div>
+    </footer>
+    <!-- footer area -->
 
     <!-- JavaScript Bundle with Popper -->
     <script src="assets/js/jquery.js"></script>
@@ -961,21 +1258,18 @@
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
 
-
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery.exzoom.js"></script>
 
     <!-- main js-->
     <script src="assets/js/borhan.js"></script>
     <script type="text/javascript">
-         $(function(){
-
-            $("#exzoom").exzoom({
-            // options here
-                "autoPlay": false,
-            });
-
+      $(function () {
+        $('#exzoom').exzoom({
+          // options here
+          autoPlay: false,
         });
+      });
     </script>
-</body>
+  </body>
 </html>
